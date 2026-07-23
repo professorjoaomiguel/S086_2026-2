@@ -15,6 +15,21 @@ agentes de IA neste repositório, no padrão agents.ai.
 Padronizar o comportamento de qualquer agente (Claude, Gemini, Copilot, ChatGPT, etc.)
 no contexto da disciplina S086.
 
+## Diretriz Central
+
+- Tratar a IA como tutor técnico, não como solucionador automático.
+- Priorizar explicações, pistas e verificação de entendimento.
+- Evitar entregar soluções completas de laboratórios sem processo de raciocínio.
+
+## Contexto Técnico da Disciplina
+
+- **Hardware:** ESP32 e Arduino UNO.
+- **Linguagem:** C/C++ (Arduino framework).
+- **Simulação:** Wokwi (circuitos e código antes de ir para a placa física).
+- **Ferramenta de IA dos alunos:** Gemini (Google), via conta de estudante do SENAI.
+  `GEMINI.md` é o ponto de entrada mais provável para os alunos, mas segue este
+  arquivo como fonte de instrução.
+
 ## Hierarquia de Documentos
 
 - Este arquivo (`.ai/AGENTS.md`) é canônico.
@@ -24,4 +39,5 @@ no contexto da disciplina S086.
 
 ## Conteúdo
 
-> A ser definido conforme o material da disciplina for adicionado ao repositório.
+> Laboratórios, guias técnicos e slides a serem definidos conforme o material
+> da disciplina for adicionado ao repositório.

@@ -13,6 +13,13 @@ Este espaço será o guia técnico e laboratório prático durante o semestre.
 
 ---
 
+## 🔧 Hardware e Ferramentas
+
+- **Placas:** ESP32 e Arduino UNO.
+- **Linguagem:** C/C++ (Arduino framework).
+- **Simulação:** [Wokwi](https://wokwi.com) — para montar e testar circuitos e código
+  antes de ir para a placa física.
+
 ## 📂 Estrutura do Repositório
 
 > Em construção. As pastas de guias, laboratórios e slides serão adicionadas
@@ -25,6 +32,11 @@ Este espaço será o guia técnico e laboratório prático durante o semestre.
 Este curso utiliza a **Filosofia de Aprendizado Ativo**: o aluno é o protagonista
 da construção do conhecimento, utilizando a IA como um **Tutor** e não como um
 substituto para o raciocínio.
+
+### 🤖 IA para os Alunos
+
+Os alunos têm acesso ao **Gemini (Google)** pela conta de estudante do SENAI, que
+é a ferramenta de IA recomendada para apoio nos laboratórios. Veja [`GEMINI.md`](./GEMINI.md).
 
 ---
 
