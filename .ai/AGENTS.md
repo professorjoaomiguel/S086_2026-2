@@ -29,9 +29,9 @@ no contexto da disciplina S086.
 - **Ferramenta de IA dos alunos:** Gemini (Google), via conta de estudante do SENAI.
   `GEMINI.md` é o ponto de entrada mais provável para os alunos, mas segue este
   arquivo como fonte de instrução.
-- **Repositório irmão:** `lab_dev_boards` — documentação de placas e shields
-  (fotos, esquemáticos, componentes, periféricos). Repositório separado, ainda
-  não publicado; não faz parte deste repositório.
+- **Repositório irmão:** [`lab_dev_boards`](https://github.com/professorjoaomiguel/lab_dev_boards)
+  — documentação de placas e shields (fotos, esquemáticos, componentes,
+  periféricos). Repositório separado; não faz parte deste repositório.
 
 ## Hierarquia de Documentos
 

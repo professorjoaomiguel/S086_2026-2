@@ -19,9 +19,10 @@ Este espaço será o guia técnico e laboratório prático durante o semestre.
 - **Linguagem:** C/C++ (Arduino framework).
 - **Simulação:** [Wokwi](https://wokwi.com) — para montar e testar circuitos e código
   antes de ir para a placa física.
-- **Documentação de placas e shields:** repositório irmão `lab_dev_boards`
+- **Documentação de placas e shields:** repositório irmão
+  [`lab_dev_boards`](https://github.com/professorjoaomiguel/lab_dev_boards)
   (fotos, esquemáticos, componentes e periféricos de cada placa/shield usada
-  em aula). Link será adicionado aqui assim que o repositório for publicado.
+  em aula).
 
 ## 📂 Estrutura do Repositório
 
