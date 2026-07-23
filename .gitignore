@@ -1,0 +1,65 @@
+# ====================================================================
+# UC S086 - Sistemas Microprocessados | SENAI Porto Alegre
+# Arquivo .gitignore estruturado e otimizado para microcontroladores (C/C++)
+# ====================================================================
+
+# --- Wokwi / Simuladores ---
+preview.png
+diagram.json.bak
+wokwi.log
+
+# --- Windows & macOS System files (Shortcut & Garbage) ---
+*.lnk
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- IDE & Editor configurations ---
+.vscode/
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/*.log
+.vscode/.settings/
+*.code-workspace
+.idea/
+*.suo
+*.user
+*.sln
+
+# --- Agent tooling ---
+.antigravity/
+
+# --- Arduino, ESP32, AVR & PlatformIO Builds ---
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+
+# --- Python & MicroPython ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Resources & Custom Folders ---
+livros/
+ai_reports/
+FacSENAI_S086_2026-2/
+classroom_config.json
