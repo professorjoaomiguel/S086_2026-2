@@ -1,15 +1,15 @@
-"""Exemplo minimo de diagrama de circuito com SchemDraw.
+"""Minimal circuit diagram example with SchemDraw.
 
-Circuito: LED com resistor limitador de corrente, acionado por um GPIO
-do ESP32-S3-UNO (nivel logico 3,3 V), retornando ao GND da placa.
+Circuit: LED with current-limiting resistor, driven by a GPIO on the
+ESP32-S3-UNO (3.3 V logic level), returning to the board's GND.
 
-Uso:
+Usage:
     pip install schemdraw matplotlib
     python exemplo_led_esp32.py
 
-Gera exemplo_led_esp32.svg e exemplo_led_esp32.png na mesma pasta.
+Generates exemplo_led_esp32.svg and exemplo_led_esp32.png in the same folder.
 
-Referencia: https://schemdraw.readthedocs.io/en/stable/
+Reference: https://schemdraw.readthedocs.io/en/stable/
 """
 
 from pathlib import Path
@@ -22,16 +22,16 @@ OUT_DIR = Path(__file__).parent
 with schemdraw.Drawing(show=False) as d:
     d.config(unit=2.5)
 
-    fonte = d.add(elm.SourceV().up().label("GPIO13\n(3,3 V)", loc="top"))
+    source = d.add(elm.SourceV().up().label("GPIO13\n(3,3 V)", loc="top"))
     d.add(elm.Resistor().right().label("R1\n330 Ω"))
     d.add(elm.LED().right().label("D1\nLED vermelho", loc="bottom"))
     d.add(elm.Line().down())
-    d.add(elm.Line().left().tox(fonte.start))
+    d.add(elm.Line().left().tox(source.start))
     d.add(elm.Line().down().length(0.6))
     d.add(elm.Ground())
 
     d.save(str(OUT_DIR / "exemplo_led_esp32.svg"))
     d.save(str(OUT_DIR / "exemplo_led_esp32.png"), dpi=200)
 
-print("Gerado:", OUT_DIR / "exemplo_led_esp32.svg")
-print("Gerado:", OUT_DIR / "exemplo_led_esp32.png")
+print("Generated:", OUT_DIR / "exemplo_led_esp32.svg")
+print("Generated:", OUT_DIR / "exemplo_led_esp32.png")

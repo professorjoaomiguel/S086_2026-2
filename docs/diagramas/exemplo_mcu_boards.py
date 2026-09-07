@@ -1,9 +1,9 @@
-"""Exemplo de uso dos blocos reutilizaveis de mcu_boards.py.
+"""Usage example for the reusable blocks in mcu_boards.py.
 
-Mostra as duas placas UNO form-factor lado a lado, apenas para conferir o
-layout de pinos do bloco generico (nao e um circuito funcional).
+Shows both UNO form-factor boards side by side, just to check the pin
+layout of the generic block (this is not a functional circuit).
 
-Uso:
+Usage:
     pip install schemdraw matplotlib
     python exemplo_mcu_boards.py
 """
@@ -24,5 +24,5 @@ with schemdraw.Drawing(show=False) as d:
     d.save(str(OUT_DIR / "exemplo_mcu_boards.svg"))
     d.save(str(OUT_DIR / "exemplo_mcu_boards.png"), dpi=200)
 
-print("Gerado:", OUT_DIR / "exemplo_mcu_boards.svg")
-print("Gerado:", OUT_DIR / "exemplo_mcu_boards.png")
+print("Generated:", OUT_DIR / "exemplo_mcu_boards.svg")
+print("Generated:", OUT_DIR / "exemplo_mcu_boards.png")
