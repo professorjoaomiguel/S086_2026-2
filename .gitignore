@@ -63,3 +63,6 @@ livros/
 ai_reports/
 FacSENAI_S086_2026-2/
 classroom_config.json
+
+# --- Marp (apresentacoes) ---
+slides/build/

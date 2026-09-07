@@ -15,19 +15,35 @@ Este espaço será o guia técnico e laboratório prático durante o semestre.
 
 ## 🔧 Hardware e Ferramentas
 
-- **Placas:** ESP32 e Arduino UNO.
-- **Linguagem:** C/C++ (Arduino framework).
+- **Placas:** Shield 9-em-1 + **ESP32-S3-UNO** (placa ESP32 em form factor
+  Arduino UNO, chip ESP32-S3: dual-core 240 MHz, Wi-Fi + BLE, 16 MB Flash,
+  8 MB PSRAM) + **Arduino UNO R3 clássico** (ATmega328P, 16 MHz).
+- **Linguagem:** C/C++ (Arduino framework), via **Arduino IDE**.
 - **Simulação:** [Wokwi](https://wokwi.com) — para montar e testar circuitos e código
   antes de ir para a placa física.
-- **Documentação de placas e shields:** repositório irmão
-  [`lab_dev_boards`](https://github.com/professorjoaomiguel/lab_dev_boards)
-  (fotos, esquemáticos, componentes e periféricos de cada placa/shield usada
-  em aula).
+- **Simuladores de CPU/assembly (candidatos, uso ainda a definir em aula):**
+  [LMC — Little Man Computer](https://peterhigginson.co.uk/lmc/)
+  ([ajuda](https://peterhigginson.co.uk/lmc/help_new.html)) e
+  [CPU Visual Simulator](https://cpuvisualsimulator.github.io/)
+  ([manual](https://cpuvisualsimulator.github.io/manual)).
+- **Documentação de placas e shields:** repositórios irmãos
+  [`lab_dev_boards`](https://github.com/professorjoaomiguel/lab_dev_boards) e
+  [`lab_se`](https://github.com/professorjoaomiguel/lab_se) (fotos, esquemáticos,
+  componentes e periféricos das placas/shields usadas em aula — `lab_se` usa
+  MicroPython em seu próprio laboratório, mas aqui a linguagem é C/C++/Arduino IDE).
 
 ## 📂 Estrutura do Repositório
 
-> Em construção. As pastas de guias, laboratórios e slides serão adicionadas
-> conforme o material da disciplina for publicado.
+- [`guias_e_roteiros_tecnicos/`](./guias_e_roteiros_tecnicos/) — guias técnicos
+  para os alunos (instalação, configuração e troubleshooting de ferramentas).
+  Segue o mesmo padrão de template usado no repositório irmão `S122_2026-1`.
+- [`slides/`](./slides/) — fontes Markdown das apresentações de aula
+  ([Marp](https://github.com/marp-team/marp), CLI instalada globalmente:
+  `npm install -g @marp-team/marp-cli`). `marp slides --output slides/build --html`
+  gera o HTML em `slides/build/` (fora do git).
+
+> Em construção. Pastas de laboratórios e slides serão adicionadas conforme
+> o material da disciplina for publicado.
 
 ---
 
