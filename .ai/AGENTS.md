@@ -80,6 +80,20 @@ no contexto da disciplina S086.
   — instalação, configuração e troubleshooting de ferramentas (ex.: Arduino
   IDE). Segue o template `00_TEMPLATE_GUIA_TECNICO.md` da mesma pasta,
   padronizado com o repositório irmão `S122_2026-1`.
+  Para guias conceituais (eletrônica/circuitos, não instalação de
+  ferramenta), usar `00_TEMPLATE_GUIA_CONCEITUAL.md` na mesma pasta.
+- **Slides de aula:** [`slides/`](../slides/) — decks Marp. Para aula nova,
+  criar primeiro um `slides/storyboard_<topico>.md` (estrutura slide-a-slide,
+  diagramas/fotos necessários, fontes) e iterar nele até estabilizar, **antes**
+  de gerar o deck Marp definitivo — não pular direto pra produção.
+- **Diagramas de circuito (produção):** scripts em
+  [`scripts/diagramas/`](../scripts/diagramas/) (SchemDraw/matplotlib) geram
+  os arquivos finais em [`images/`](../images/), usados em slides/guias.
+  Distinto de `.ai/docs/diagramas/`, que é só a área de teste/exemplo do
+  SchemDraw — não é onde ficam os diagramas de produção.
+- **Datasheets de componente:** [`datasheets/`](../datasheets/) — datasheets
+  oficiais baixados (não citar valor técnico de memória) usados como fonte
+  primária em guias/slides; subpastas por tipo (`leds/`, `botoes/`, etc.).
 
 > Laboratórios e slides a serem definidos conforme o material da disciplina
 > for adicionado ao repositório.
