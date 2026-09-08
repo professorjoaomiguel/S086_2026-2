@@ -43,8 +43,11 @@ no contexto da disciplina S086.
     em **MicroPython** — no S086 a linguagem é **C/C++ via Arduino IDE** (ver
     abaixo). Usar `lab_se` só como referência de hardware, não de
     linguagem/exemplos de código.
-- **Linguagem:** C/C++ (Arduino framework), via **Arduino IDE**.
-- **Simulação:** Wokwi (circuitos e código antes de ir para a placa física).
+- **Linguagem:** C/C++ (Arduino framework), via **Arduino IDE** — também o
+  ambiente usado para gravar código nas placas físicas reais.
+- **Simulação (por placa):**
+  - **Arduino UNO R3 (ATmega328P):** **Tinkercad**.
+  - **ESP32-S3-UNO (ESP32-S3):** **Wokwi**.
 - **Simuladores de CPU/assembly (candidatos, ainda não vinculados a nenhuma aula
   ou atividade prática — a organizar):**
   - [LMC — Little Man Computer](https://peterhigginson.co.uk/lmc/)
