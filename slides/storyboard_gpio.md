@@ -43,6 +43,23 @@ mesmo slide (a resposta vem no slide seguinte). Três tipos:
 - 🔍 **Garimpo no datasheet** — abrir um PDF já baixado em `datasheets/` e
   achar um número específico, cronometrado (~2 min).
 
+**Regra de produção para a revelação:** o slide seguinte a uma pausa mostra
+só o fato/valor (ex.: "Vermelho — 2,2V @ 20mA"), **nunca** um rótulo
+"Resposta:" impresso. A revelação acontece pela discussão oral — o
+professor pergunta "quem chutou X? quem chegou perto?" — não pela leitura
+de um gabarito na tela. Onde o storyboard abaixo anota entre parênteses o
+valor calculado de uma pausa 🧮 (ex. slide de cálculo do LED verde), é nota
+de produção para o professor conferir, não texto a imprimir no slide.
+
+**Regra de produção geral: um slide, uma ideia.** Evitar empilhar
+imagem + fórmula + código + tabela no mesmo slide — quando isso acontecer
+naturalmente ao escrever o `.md`, quebrar em vários slides (pergunta →
+circuito → observação → fórmula → cálculo → conclusão) em vez de
+comprimir. Isso é uma extensão direta da diretriz de ritmo cinematográfico
+acima, a aplicar também na hora de escrever os decks Marp de verdade (o
+storyboard já aponta a divisão macro; a divisão fina de cada slide denso
+acontece na produção).
+
 ## Diagramas e fotos necessários
 
 Scripts em `scripts/diagramas/`, saída (`.svg` + `.png`) em `images/`.
@@ -137,8 +154,8 @@ para ninguém usar 45kΩ como resistor externo por engano.
 15. **V_F — laranja** — datasheet ROHM SML-D12D8W (mesma condição, I_F=20mA): V_F típico = **2,2V**. Igual ao vermelho — coincidência? (frame 2/4.)
 16. **V_F — amarelo** — datasheet ROHM SML-D12Y8W (I_F=20mA): V_F típico = **2,2V**. De novo? (frame 3/4.)
 17. **V_F — verde, e a virada** — datasheet ROHM SML-D12P8W (I_F=20mA): V_F típico = **2,2V**. As quatro cores desta família batem exatamente em 2,2V — o que muda entre elas é o comprimento de onda (λD) e a intensidade luminosa (I_V), **não o V_F**. V_F depende do componente e da corrente de teste, não é uma propriedade fixa da cor. Fonte: `datasheets/leds/ROHM_SML-D12*.pdf` (ver seção de datasheets abaixo). (frame 4/4.)
-18. **Calculando o resistor limitador** — fórmula R = (V_fonte − V_F) / I, aplicada com uma fonte genérica (ex.: pilha de 9V, LED vermelho V_F=2,2V, I=10mA). Duas frases-chave: "o resistor não limita a tensão do LED — limita a corrente" e "a tensão que sobra depois do LED aparece no resistor" (V_R = V_fonte − V_F). Pergunta para a turma: **"Se o LED tem V_F=2,2V, por que não uso uma fonte de 2,2V direto nele?"** — resposta: V_F não é "a tensão que o LED precisa para funcionar", é a tensão que aparece sobre ele quando uma certa corrente já está circulando; sem um elemento limitador, a corrente pode crescer para valores destrutivos — é a característica I-V extremamente não linear do diodo (vista informalmente no slide 8), não um "curto-circuito" literal.
-19. **🧮 Pausa — Cálculo** — "Com a fórmula do slide anterior: qual o resistor para um LED verde (V_F=2,2V) numa fonte de 9V, com I=15mA? Calculem antes de eu revelar." (Resposta: R=(9−2,2)/0,015≈453Ω → comercial 470Ω — pode ser dada verbalmente no próximo slide ou só conferida em grupo, sem slide de revelação dedicado.)
+18. **Calculando o resistor limitador** — fórmula R = (V_fonte − V_F) / I, aplicada com uma fonte genérica (ex.: pilha de 9V, LED vermelho **ROHM SML-D12U8W**, V_F=2,2V @20mA, I=10mA — o mesmo componente visto nos slides anteriores, não "vermelho" em geral). Duas frases-chave: "o resistor não limita a tensão do LED — limita a corrente" e "a tensão que sobra depois do LED aparece no resistor" (V_R = V_fonte − V_F). Pergunta para a turma: **"Se o LED tem V_F=2,2V, por que não uso uma fonte de 2,2V direto nele?"** — resposta: V_F não é "a tensão que o LED precisa para funcionar", é a tensão que aparece sobre ele quando uma certa corrente já está circulando; sem um elemento limitador, a corrente pode crescer para valores destrutivos — é a característica I-V extremamente não linear do diodo (vista informalmente no slide 8), não um "curto-circuito" literal.
+19. **🧮 Pausa — Cálculo** — "Com a fórmula do slide anterior: qual o resistor para o LED verde **ROHM SML-D12P8W** (V_F=2,2V @20mA — o mesmo componente do slide 17, não 'verde' em geral) numa fonte de 9V, com I=15mA? Calculem antes de eu revelar." (Nota de produção — não imprimir no slide: R=(9−2,2)/0,015≈453Ω → comercial 470Ω; revelar só verbalmente/em discussão, sem rótulo "Resposta:" na tela.)
 20. **O que muda quando a fonte é um GPIO?** — o pino não é uma fonte ideal: tem um nível de tensão fixo e limitado (5V no UNO, 3,3V no ESP32-S3-UNO) e uma capacidade de corrente limitada. Ponte para a próxima ideia.
 21. **🔮 Pausa — Previsão** — "Se eu quiser que o LED apague quando o GPIO estiver em HIGH (em vez de acender), o que precisa mudar no circuito?" Pensem antes da explicação.
 22. **GPIO como fonte ou sumidouro de corrente** — GPIO em HIGH **fornece** corrente (source): alimenta o LED diretamente → circuito **ativo-alto**. GPIO em LOW **absorve** corrente (sink): completa o caminho de um LED alimentado pelo VCC → circuito **ativo-baixo**. A origem do ativo-alto/ativo-baixo é elétrica, não uma escolha arbitrária de fiação.
@@ -172,7 +189,7 @@ para ninguém usar 45kΩ como resistor externo por engano.
 6. **De volta à interface elétrica do GPIO** — retomada do diagrama 14 (visto na aula de saída): hoje o pino passa a **ler** uma tensão que vem de fora, em vez de impô-la. Mesma fronteira, sentido contrário. *Diagrama 14.*
 7. **Circuito básico: fonte + resistor + botão** — sem microcontrolador ainda, só pra observar a tensão em um ponto do circuito ao apertar/soltar. *Diagrama 8.*
 8. **🔮 Pausa — Previsão** — "O botão fecha o circuito ou abre o circuito quando está solto (sem ninguém tocando)? Será que todo botão funciona igual?"
-9. **NA vs. NF: os dois tipos de contato** — a maioria dos botões usados com GPIO é **NA** (normalmente aberto / *Normally Open*, NO): em repouso o contato está aberto (sem caminho de corrente), pressionar fecha o circuito. Existe também o **NF** (normalmente fechado / *Normally Closed*, NC): em repouso o contato já está fechado (conduzindo), pressionar é que abre o circuito. No NF, um resistor de referência conduz continuamente enquanto o botão está em repouso — desperdício de energia relevante em projetos alimentados por bateria; por isso o NA é a escolha padrão, e o NF costuma aparecer por outro motivo: circuitos de segurança/fail-safe, onde um fio rompido já é detectado como acionamento — como o sensor de fim de curso do slide 4, que em muitas aplicações de segurança é NF por esse exato motivo. (Detalhamento de consumo/fail-safe fica para o guia.) *Diagrama 15.*
+9. **NA vs. NF: os dois tipos de contato** — a maioria dos botões usados com GPIO é **NA** (normalmente aberto / *Normally Open*, NO): em repouso o contato está aberto (sem caminho de corrente), pressionar fecha o circuito. Existe também o **NF** (normalmente fechado / *Normally Closed*, NC): em repouso o contato já está fechado (conduzindo), pressionar é que abre o circuito. **NA e NF não são "melhor" e "pior" — são escolhas de projeto: cada um define qual estado elétrico existe quando ninguém está acionando o dispositivo.** No NF esse estado de repouso já conduz corrente pelo resistor de referência (relevante em projetos sensíveis a consumo, ex. bateria); em compensação, é justamente por já estar "fechado por padrão" que o NF costuma aparecer em circuitos de segurança/fail-safe, onde um fio rompido já é detectado como acionamento — como o sensor de fim de curso do slide 4. (Detalhamento de consumo/fail-safe fica para o guia.) *Diagrama 15.*
 10. **Botão de verdade — o que você já usou** — foto: tactile pushbutton de 4 pinos (o do kit), quase sempre NA. (frame 1/2.)
 11. **Chave de verdade — COM/NO/NC no mesmo componente** — foto: microchave Omron D2F, capa do datasheet mostrando várias variantes e o diagrama de terminais COM/NO/NC — uma única chave mecânica pode oferecer os dois contatos ao mesmo tempo (você escolhe qual fiar), diferente do pushbutton do frame anterior, que só tem NA. (frame 2/2.)
 12. **🔮 Pausa — Previsão** — "Sem nenhum resistor conectado, o que a tensão faz no ponto entre o botão e o fio, quando ninguém está tocando? Desenhem um palpite do gráfico tensão × tempo." Comparamos com os dados reais nos próximos dois slides.
