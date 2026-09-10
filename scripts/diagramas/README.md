@@ -69,22 +69,31 @@ nos diagramas de pull-up/pull-down).
 Fotos reais — não são diagramas gerados, mas registradas aqui por serem
 parte do mesmo levantamento de imagens do storyboard.
 
-**Resolvidas nesta sessão:**
+**Resolvidas:**
 - `led_smd.png`, `led_rgb.png`, `chave_d2f.png` — recortadas via PyMuPDF
   (`pip install pymupdf`) da página 1 dos datasheets já baixados em
   `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
   — renderizar a página 1 em alta resolução e cortar a região da foto).
 - `industrial_saida_1/2/3.jpg`, `industrial_entrada_1.jpg` — fotos de
   estoque do Pixabay (licença livre, uso comercial/educacional sem
-  atribuição obrigatória), buscadas via WebSearch/WebFetch. **Nota:** o
-  Pixabay tem cobertura fraca para peças eletrônicas/industriais de nicho
-  (fim de curso, chave-boia, LED THT genérico, pushbutton tátil genérico)
-  — buscas específicas retornam majoritariamente resultados irrelevantes;
-  funcionou bem para fotos amplas de painel/quadro de comando industrial.
+  atribuição obrigatória), buscadas via WebSearch/WebFetch.
+- `led_tht.jpg`, `chave_boia.jpg`, `industrial_entrada_2.jpg` — fotos do
+  Wikimedia Commons (CC BY / CC BY-SA — **exigem atribuição**, incluída
+  no comentário do slide correspondente e na tabela de
+  `slides/storyboard_gpio.md`). Baixadas via
+  `https://commons.wikimedia.org/wiki/Special:FilePath/<nome-do-arquivo>`
+  (redireciona pro arquivo original — mais confiável do que pedir pro
+  WebFetch "listar a URL exata" de uma página de busca, que às vezes
+  alucina/deforma o caminho com hash).
 
-**Ainda pendente** (busca em bancos livres não achou boa correspondência):
-`led_tht` (LED THT 5mm genérico), `botao_pushbutton` (tactile 4 pinos
-genérico), foto de sensor de fim de curso (Deck Entrada slide 4), foto de
-chave-boia (Deck Entrada slide 5). Melhor caminho provável: foto própria
-de uma peça do kit em mãos, mais rápido e mais fiel que insistir em banco
-de imagens para esses itens específicos.
+**Nota sobre os bancos usados:** Pixabay tem cobertura fraca pra peças
+eletrônicas/industriais de nicho, mas boa pra fotos amplas de
+painel/quadro de comando industrial. Wikimedia Commons é o oposto — fraco
+pra fotos "de estoque" genéricas, mas tem fotos reais de componentes
+técnicos específicos (fim-de-curso, chave-boia, LED THT) contribuídas por
+hobbistas/engenheiros, sempre com licença que exige atribuição.
+
+**Ainda pendente:** `botao_pushbutton` (tactile 4 pinos genérico) — nenhum
+dos dois bancos tem uma foto de qualidade desse componente especificamente
+(pequeno/genérico demais pra ter foto dedicada). Melhor caminho: foto
+própria de uma peça do kit em mãos.

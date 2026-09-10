@@ -143,12 +143,12 @@ para ligar o LED direto numa fonte de V_F volts.
 
 **LED de 5mm (THT)** — o que a maioria já viu ou usou.
 
-<!-- TODO: foto real pendente — LED THT 5mm genérico. Busca em bancos de
-imagem livres (Pixabay, Wikimedia Commons) não achou um close-up de
-qualidade; melhor resolver com foto própria de uma peça do kit em mãos. -->
+![h:420](../images/led_tht.jpg)
 
 <!--
-Frame 1/3.
+Frame 1/3. Foto: Wikimedia Commons, "5mm Red LED.jpg", CC BY-SA 2.0 —
+https://commons.wikimedia.org/wiki/File:5mm_Red_LED.jpg. Bônus didático:
+dá pra apontar a perna mais longa (ânodo) direto na foto.
 -->
 
 ---

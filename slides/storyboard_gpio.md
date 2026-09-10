@@ -125,13 +125,15 @@ para ninguém usar 45kΩ como resistor externo por engano.
 | 13| `niveis_logicos_limiares`     | gráfico (faixas) | Duas retas de tensão (0→VCC) lado a lado: ATmega328P (V_IL≤1,5V, V_IH≥3,0V @5V) e ESP32-S3 (V_IL≤0,825V, V_IH≥2,475V @3,3V), com zonas LOW/indefinido/HIGH marcadas — valores calculados de V_IL=0,3×VCC/V_IH=0,6×VCC (ATmega328P) e V_IL=0,25×VDD/V_IH=0,75×VDD (ESP32-S3), conferir contra a edição exata do datasheet no guia | Deck Entrada, slide 19 |
 | 14| `gpio_interface_conceito`     | bloco            | MICROCONTROLADOR/GPIO no centro, seta para SAÍDA (LED) e seta vinda de ENTRADA (botão) — "GPIO é a interface elétrica" | Deck Saída, slide 7 (frame final de 2); Deck Entrada, slide 6 (retomada, slide único) |
 | 15| `botao_na_nf`                 | esquemático      | Dois botões lado a lado no mesmo circuito (fonte+resistor genérico): NA (aberto em repouso, sem corrente) e NF (fechado em repouso, corrente contínua ≈V/R) — anotar a corrente de repouso em cada um | Deck Entrada, slide 9 |
-| — | *(foto real)* `led_tht`            | foto (não gerada) | LED de 5mm (THT) genérico                                                | Deck Saída, slide 9 |
-| — | *(foto real)* `led_smd`            | foto (não gerada) | Chip SMD ROHM SML-D12 (foto da capa do datasheet)                         | Deck Saída, slide 10 |
-| — | *(foto real)* `led_rgb`            | foto (não gerada) | LED RGB PLCC6 (foto da capa Everlight/ROHM SMLP34)                        | Deck Saída, slide 11 |
-| — | *(foto real)* `botao_pushbutton`   | foto (não gerada) | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit)       | Deck Entrada, slide 10 |
-| — | *(foto real)* `chave_d2f`          | foto (não gerada) | Microchave Omron D2F (foto da capa do datasheet, mostra COM/NO/NC)        | Deck Entrada, slide 11 |
-| — | *(genérico/estoque, não gerado)* `industrial_saida`  | foto/ícone | Lâmpada de sinalização + contator + painel de máquina em operação (3 imagens genéricas — não específicas do S086) | Deck Saída, slides 3-5 |
-| — | *(genérico/estoque, não gerado)* `industrial_entrada`| foto/ícone | Botoeira de partida + sensor de fim de curso + chave-boia (3 imagens genéricas) | Deck Entrada, slides 3-5 |
+| — | *(foto real)* `led_tht`            | foto ✅ resolvida | LED de 5mm (THT) genérico — Wikimedia Commons, "5mm Red LED.jpg", CC BY-SA 2.0 | Deck Saída, slide 9 |
+| — | *(foto real)* `led_smd`            | foto ✅ resolvida | Chip SMD ROHM SML-D12 — recortada da capa do datasheet (PyMuPDF)         | Deck Saída, slide 10 |
+| — | *(foto real)* `led_rgb`            | foto ✅ resolvida | LED RGB PLCC6 — recortada da capa do datasheet ROHM SMLP34 (PyMuPDF)     | Deck Saída, slide 11 |
+| — | *(foto real)* `botao_pushbutton`   | foto **pendente** | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit) — busca em Pixabay e Wikimedia Commons não achou close-up de qualidade; melhor resolver com foto própria do kit | Deck Entrada, slide 10 |
+| — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 11 |
+| — | *(foto real)* `chave_boia`         | foto ✅ resolvida | Chave-boia real — Wikimedia Commons, "Float switch for open tanks.JPG", CC BY 2.5 | Deck Entrada, slide 5 |
+| — | *(genérico/estoque)* `industrial_saida_1/2/3`  | foto ✅ resolvida | Lâmpada de sinalização + contator + painel de máquina em operação — fotos Pixabay (licença livre) | Deck Saída, slides 3-5 |
+| — | *(genérico/estoque)* `industrial_entrada_1`    | foto ✅ resolvida | Botoeira industrial — foto Pixabay (exemplar fotografado é "PUSH TO STOP", usado só como moldura visual) | Deck Entrada, slide 3 |
+| — | *(genérico/estoque)* `industrial_entrada_2`    | foto ✅ resolvida | Sensor de fim de curso — Wikimedia Commons, "Limit_Switches.JPG" (Mixabest), CC BY-SA 3.0 | Deck Entrada, slide 4 |
 
 ---
 
@@ -387,4 +389,10 @@ tempo de fala.
 de estoque — lâmpada de sinalização, contator, painel de máquina (Saída);
 botoeira, sensor de fim de curso, chave-boia (Entrada). Não são componentes
 específicos do S086 nem têm datasheet associado — servem só de moldura
-motivacional, sem números técnicos para verificar.
+motivacional, sem números técnicos para verificar. Resolvidas via Pixabay
+(licença livre, sem atribuição obrigatória) e Wikimedia Commons (CC BY /
+CC BY-SA, atribuição citada no comentário do slide) — ver a tabela de
+diagramas acima e `scripts/diagramas/README.md` para a fonte exata de
+cada arquivo. Único item ainda pendente: `botao_pushbutton` (tactile 4
+pinos genérico) — nenhum dos dois bancos tem cobertura boa pra esse
+componente específico; resolver com foto própria do kit.

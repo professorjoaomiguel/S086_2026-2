@@ -64,12 +64,13 @@ moldura visual, sem pretensão de ser o botão exato da frase).
 
 ### 🚪 Um sensor de fim de curso detecta que uma porta está fechada
 
-<!-- TODO: foto genérica de estoque pendente — busca em bancos de imagem
-livres não achou um limit switch de qualidade; ver
-scripts/diagramas/README.md, "Pendente (não gerado por script)". -->
+![h:420](../images/industrial_entrada_2.jpg)
 
 <!--
-Frame 2/3.
+Frame 2/3. Foto: Wikimedia Commons, "Limit_Switches.JPG" (Mixabest),
+CC BY-SA 3.0 —
+https://commons.wikimedia.org/wiki/File:Limit_Switches.JPG — sensores de
+fim de curso (caixas azuis) instalados em trilho de máquina industrial.
 -->
 
 ---
@@ -79,13 +80,13 @@ Frame 2/3.
 **Para entender sistemas maiores, vamos começar pelo menor sensor
 possível: um botão.**
 
-<!-- TODO: foto genérica de estoque pendente — mesma situação do slide
-anterior (float switch não encontrado nos bancos de imagem livres
-pesquisados). -->
+![h:420](../images/chave_boia.jpg)
 
 <!--
 Frame 3/3 — transição para a aula. Mesma lógica elétrica (um contato
-informa um estado), em escala de bancada.
+informa um estado), em escala de bancada. Foto: Wikimedia Commons,
+"Float switch for open tanks.JPG" (S.J. de Waard), CC BY 2.5 —
+https://commons.wikimedia.org/wiki/File:Float_switch_for_open_tanks.JPG
 -->
 
 ---
@@ -160,9 +161,11 @@ do slide 4. Detalhamento de consumo/fail-safe fica para o guia.
 
 **Tactile pushbutton** de 4 pinos (o do kit) — quase sempre NA.
 
-<!-- TODO: foto real pendente — busca em bancos de imagem livres não
-achou um close-up de qualidade de pushbutton tátil 4 pinos; melhor
-resolver com foto própria de uma peça do kit em mãos. -->
+<!-- TODO: foto real pendente — busca em dois bancos de imagem livres
+(Pixabay e Wikimedia Commons) não achou um close-up de qualidade de
+pushbutton tátil 4 pinos; é um componente pequeno/genérico demais para
+ter foto dedicada nesses bancos. Melhor resolver com foto própria de uma
+peça do kit em mãos. -->
 
 <!--
 Frame 1/2.
