@@ -64,12 +64,11 @@ nos diagramas de pull-up/pull-down).
 - Sempre gerar o `.png` e inspecionar visualmente antes de considerar um
   diagrama pronto — sobreposição de texto é comum e só aparece no render.
 
-## Pendente (não gerado por script)
+## Fotos reais (não geradas por script)
 
-Fotos reais — não são diagramas gerados, mas registradas aqui por serem
-parte do mesmo levantamento de imagens do storyboard.
-
-**Resolvidas:**
+Não são diagramas gerados, mas registradas aqui por serem parte do mesmo
+levantamento de imagens do storyboard. Todas as 12 fotos da tabela de
+`slides/storyboard_gpio.md` estão resolvidas.
 - `led_smd.png`, `led_rgb.png`, `chave_d2f.png` — recortadas via PyMuPDF
   (`pip install pymupdf`) da página 1 dos datasheets já baixados em
   `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
@@ -86,14 +85,25 @@ parte do mesmo levantamento de imagens do storyboard.
   WebFetch "listar a URL exata" de uma página de busca, que às vezes
   alucina/deforma o caminho com hash).
 
+- `botao_pushbutton.jpg` — nem Pixabay nem Wikimedia Commons tinham uma
+  foto de qualidade desse componente especificamente (pequeno/genérico
+  demais pra ter foto dedicada nesses bancos). Resolvida com foto de
+  catálogo do fornecedor **Eletrogate.com.br** ("Push Button (Chave
+  Táctil) 6x6x7mm") — foto comercial, **não** licença aberta; uso
+  educacional/ilustrativo em material de aula, com fonte citada no
+  comentário do slide. Diferente das fotos Pixabay/Commons acima, que têm
+  licença livre explícita.
+
 **Nota sobre os bancos usados:** Pixabay tem cobertura fraca pra peças
 eletrônicas/industriais de nicho, mas boa pra fotos amplas de
 painel/quadro de comando industrial. Wikimedia Commons é o oposto — fraco
 pra fotos "de estoque" genéricas, mas tem fotos reais de componentes
 técnicos específicos (fim-de-curso, chave-boia, LED THT) contribuídas por
-hobbistas/engenheiros, sempre com licença que exige atribuição.
-
-**Ainda pendente:** `botao_pushbutton` (tactile 4 pinos genérico) — nenhum
-dos dois bancos tem uma foto de qualidade desse componente especificamente
-(pequeno/genérico demais pra ter foto dedicada). Melhor caminho: foto
-própria de uma peça do kit em mãos.
+hobbistas/engenheiros, sempre com licença que exige atribuição. Sites de
+venda de componentes eletrônicos (Eletrogate, Filipeflop/MakerHero,
+Robocore etc.) são o melhor lugar pra achar a foto exata de um componente
+"de kit" pequeno e padronizado (pushbutton tátil, resistor, jumper) que
+não é fotografado por hobbistas nem por bancos de imagem — mas a foto é
+comercial (catálogo do fornecedor), não licença aberta; citar a fonte no
+comentário do slide é obrigatório. Filipeflop bloqueou o fetch direto
+(HTTP 403); Eletrogate funcionou sem problema.

@@ -128,7 +128,7 @@ para ninguém usar 45kΩ como resistor externo por engano.
 | — | *(foto real)* `led_tht`            | foto ✅ resolvida | LED de 5mm (THT) genérico — Wikimedia Commons, "5mm Red LED.jpg", CC BY-SA 2.0 | Deck Saída, slide 9 |
 | — | *(foto real)* `led_smd`            | foto ✅ resolvida | Chip SMD ROHM SML-D12 — recortada da capa do datasheet (PyMuPDF)         | Deck Saída, slide 10 |
 | — | *(foto real)* `led_rgb`            | foto ✅ resolvida | LED RGB PLCC6 — recortada da capa do datasheet ROHM SMLP34 (PyMuPDF)     | Deck Saída, slide 11 |
-| — | *(foto real)* `botao_pushbutton`   | foto **pendente** | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit) — busca em Pixabay e Wikimedia Commons não achou close-up de qualidade; melhor resolver com foto própria do kit | Deck Entrada, slide 10 |
+| — | *(foto real)* `botao_pushbutton`   | foto ✅ resolvida | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit) — foto de catálogo Eletrogate.com.br (fornecedor de componentes, não licença aberta — uso educacional com fonte citada) | Deck Entrada, slide 10 |
 | — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 11 |
 | — | *(foto real)* `chave_boia`         | foto ✅ resolvida | Chave-boia real — Wikimedia Commons, "Float switch for open tanks.JPG", CC BY 2.5 | Deck Entrada, slide 5 |
 | — | *(genérico/estoque)* `industrial_saida_1/2/3`  | foto ✅ resolvida | Lâmpada de sinalização + contator + painel de máquina em operação — fotos Pixabay (licença livre) | Deck Saída, slides 3-5 |
@@ -389,10 +389,10 @@ tempo de fala.
 de estoque — lâmpada de sinalização, contator, painel de máquina (Saída);
 botoeira, sensor de fim de curso, chave-boia (Entrada). Não são componentes
 específicos do S086 nem têm datasheet associado — servem só de moldura
-motivacional, sem números técnicos para verificar. Resolvidas via Pixabay
-(licença livre, sem atribuição obrigatória) e Wikimedia Commons (CC BY /
-CC BY-SA, atribuição citada no comentário do slide) — ver a tabela de
-diagramas acima e `scripts/diagramas/README.md` para a fonte exata de
-cada arquivo. Único item ainda pendente: `botao_pushbutton` (tactile 4
-pinos genérico) — nenhum dos dois bancos tem cobertura boa pra esse
-componente específico; resolver com foto própria do kit.
+motivacional, sem números técnicos para verificar. Todas resolvidas —
+Pixabay (licença livre, sem atribuição obrigatória), Wikimedia Commons
+(CC BY / CC BY-SA, atribuição citada no comentário do slide) e, para o
+`botao_pushbutton` (que nenhum banco de imagem livre tinha em boa
+qualidade), foto de catálogo do fornecedor Eletrogate.com.br (uso
+educacional, fonte citada). Ver a tabela de diagramas acima e
+`scripts/diagramas/README.md` para a fonte exata de cada arquivo.

@@ -161,14 +161,14 @@ do slide 4. Detalhamento de consumo/fail-safe fica para o guia.
 
 **Tactile pushbutton** de 4 pinos (o do kit) — quase sempre NA.
 
-<!-- TODO: foto real pendente — busca em dois bancos de imagem livres
-(Pixabay e Wikimedia Commons) não achou um close-up de qualidade de
-pushbutton tátil 4 pinos; é um componente pequeno/genérico demais para
-ter foto dedicada nesses bancos. Melhor resolver com foto própria de uma
-peça do kit em mãos. -->
+![h:420](../images/botao_pushbutton.jpg)
 
 <!--
-Frame 1/2.
+Frame 1/2. Foto: catálogo Eletrogate.com.br ("Push Button (Chave Táctil)
+6x6x7mm") — foto comercial de fornecedor, não licença aberta; uso
+educacional/ilustrativo em material de aula, com fonte citada aqui
+(diferente das fotos Pixabay/Commons usadas em outros slides, que têm
+licença livre explícita — ver scripts/diagramas/README.md).
 -->
 
 ---
