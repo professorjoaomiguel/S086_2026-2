@@ -40,7 +40,7 @@ Capa. Placas de referência da aula inteira: Arduino UNO R3 (ATmega328P,
 
 ---
 
-## Objetivo da aula
+## 🎯 Objetivo da aula
 
 - Calcular o resistor certo para acender um LED com segurança
 - Entender como um GPIO — e, quando necessário, um transistor — assume o
@@ -53,34 +53,36 @@ de interface com o microcontrolador (GPIO como fonte de tensão limitada).
 
 ---
 
-### Um CLP aciona uma lâmpada de sinalização
+### 🏭 Um CLP aciona uma lâmpada de sinalização
 
-<!-- TODO: foto genérica de estoque (lâmpada de sinalização industrial) —
-ver scripts/diagramas/README.md, "Pendente (não gerado por script)". -->
+![h:420](../images/industrial_saida_1.jpg)
 
 <!--
 Frame 1/3 — contexto industrial, abertura. Frase + imagem, sem mais
-explicação ainda — a ideia é só ambientar.
+explicação ainda — a ideia é só ambientar. Foto: Pixabay (licença livre
+para uso comercial/educacional, sem atribuição obrigatória) — painel de
+máquina com botão luminoso, usado aqui como metáfora visual de
+sinalização industrial.
 -->
 
 ---
 
-### Um controlador liga um contator
+### ⚙️ Um controlador liga um contator
 
-<!-- TODO: foto genérica de estoque (contator). -->
+![h:420](../images/industrial_saida_2.jpg)
 
 <!--
-Frame 2/3.
+Frame 2/3. Foto: Pixabay — chão de fábrica/automação industrial.
 -->
 
 ---
 
-### Um módulo eletrônico informa que uma máquina está em operação
+### 🤖 Um módulo eletrônico informa que uma máquina está em operação
 
 **Para entender sistemas maiores, vamos começar pelo menor atuador
 possível: um LED.**
 
-<!-- TODO: foto genérica de estoque (painel de máquina em operação). -->
+![h:420](../images/industrial_saida_3.jpg)
 
 <!--
 Frame 3/3 — transição para a aula. Mesma lógica elétrica (um sinal de
@@ -89,7 +91,7 @@ controle aciona uma carga), só que em escala de bancada.
 
 ---
 
-### Mas por trás de acender esse LED, algo mais fundamental
+### 🤔 Mas por trás de acender esse LED, algo mais fundamental
 
 O microcontrolador vai **pôr uma tensão no mundo físico**, através de um
 único pino.
@@ -101,7 +103,7 @@ do próximo slide "aterrissar" com mais efeito.
 
 ---
 
-### Esse pino se chama GPIO
+### 🔌 Esse pino se chama GPIO
 
 **GPIO = interface elétrica entre o microcontrolador e o mundo.**
 
@@ -118,7 +120,7 @@ sentidos, não duas APIs desconectadas.
 
 ---
 
-## Como um LED acende
+## 💡 Como um LED acende
 
 É um **diodo**: a corrente cresce fortemente conforme a tensão direta
 aumenta.
@@ -137,11 +139,13 @@ para ligar o LED direto numa fonte de V_F volts.
 
 ---
 
-### LED de verdade — o clássico
+### 💡 LED de verdade — o clássico
 
 **LED de 5mm (THT)** — o que a maioria já viu ou usou.
 
-<!-- TODO: foto real — LED THT 5mm genérico. -->
+<!-- TODO: foto real pendente — LED THT 5mm genérico. Busca em bancos de
+imagem livres (Pixabay, Wikimedia Commons) não achou um close-up de
+qualidade; melhor resolver com foto própria de uma peça do kit em mãos. -->
 
 <!--
 Frame 1/3.
@@ -149,34 +153,35 @@ Frame 1/3.
 
 ---
 
-### LED de verdade — em miniatura
+### 💡 LED de verdade — em miniatura
 
 **Chip SMD ROHM SML-D12** (1,6×0,8mm) — o mesmo símbolo triangular do
 diagrama representa isso, só que do tamanho de um grão de arroz.
 
-<!-- TODO: foto real — capa do datasheet ROHM SML-D12 (datasheets/leds/). -->
+![h:400](../images/led_smd.png)
 
 <!--
-Frame 2/3.
+Frame 2/3. Foto: capa do datasheet ROHM SML-D12U8W (página 1),
+datasheets/leds/ROHM_SML-D12U8W_Vermelho.pdf — extraída via PyMuPDF.
 -->
 
 ---
 
-### LED de verdade — três em um
+### 💡 LED de verdade — três em um
 
 **LED RGB**, 3 chips num só encapsulamento — adiantando o que vem no
 slide 31.
 
-<!-- TODO: foto real — capa do datasheet Everlight/ROHM SMLP34
-(datasheets/leds/). -->
+![h:380](../images/led_rgb.png)
 
 <!--
-Frame 3/3.
+Frame 3/3. Foto: capa do datasheet ROHM SMLP34RGBN1W (página 1, seção
+"Outline"), datasheets/leds/ROHM_SMLP34RGBN1W_RGB.pdf.
 -->
 
 ---
 
-## Circuito básico: fonte + resistor + LED
+## 🔋 Circuito básico: fonte + resistor + LED
 
 Sem microcontrolador ainda — só uma fonte de tensão qualquer
 (pilha/fonte de bancada).
@@ -206,7 +211,7 @@ Pausa ativa tipo previsão. Não revelar nada ainda.
 
 <!-- _class: revelacao -->
 
-### V_F — vermelho
+### 🔴 V_F — vermelho
 
 **ROHM SML-D12U8W** (@ I_F = 20mA): **V_F típico = 2,2V**
 
@@ -218,7 +223,7 @@ Discussão oral aqui: "quem chutou perto de 2,2V?" — sem imprimir
 
 ---
 
-### V_F — laranja
+### 🟠 V_F — laranja
 
 **ROHM SML-D12D8W** (mesma condição, I_F = 20mA): **V_F típico = 2,2V**
 
@@ -230,7 +235,7 @@ Frame 2/4.
 
 ---
 
-### V_F — amarelo
+### 🟡 V_F — amarelo
 
 **ROHM SML-D12Y8W** (I_F = 20mA): **V_F típico = 2,2V**
 
@@ -242,7 +247,7 @@ Frame 3/4.
 
 ---
 
-### V_F — verde, e a virada
+### 🟢 V_F — verde, e a virada
 
 **ROHM SML-D12P8W** (I_F = 20mA): **V_F típico = 2,2V**
 
@@ -260,7 +265,7 @@ Vira a virada pedagógica do bloco de revelação.
 
 ---
 
-## Calculando o resistor limitador
+## 📐 Calculando o resistor limitador
 
 **R = (V_fonte − V_F) / I**
 
@@ -303,7 +308,7 @@ de 470Ω?"), sem rótulo "Resposta:" na tela.
 
 ---
 
-## O que muda quando a fonte é um GPIO?
+## 🔌 O que muda quando a fonte é um GPIO?
 
 O pino **não é uma fonte ideal**: tem um nível de tensão fixo e limitado
 (5V no UNO, 3,3V no ESP32-S3-UNO) e uma capacidade de corrente limitada.
@@ -325,7 +330,7 @@ Pensem antes da explicação.
 
 ---
 
-## GPIO como fonte ou sumidouro de corrente
+## ⚡ GPIO como fonte ou sumidouro de corrente
 
 - GPIO em **HIGH** **fornece** corrente (*source*): alimenta o LED
   diretamente → circuito **ativo-alto**
@@ -337,7 +342,7 @@ arbitrária de fiação.**
 
 ---
 
-## Ativo-alto
+## ⬆️ Ativo-alto
 
 Ânodo no GPIO, cátodo → resistor → GND. **HIGH acende.**
 
@@ -349,11 +354,11 @@ Diagrama 2.
 
 ---
 
-## Ativo-baixo
+## ⬇️ Ativo-baixo
 
 Cátodo no GPIO, ânodo → resistor → VCC. **LOW acende.**
 
-![w:520](../images/led_ativo_baixo.svg)
+![h:340](../images/led_ativo_baixo.svg)
 
 Por que isso existe na prática: alguns módulos/placas vêm cabeados assim
 de fábrica (ex.: LED onboard) — importante **ler o esquemático**, não
@@ -377,7 +382,7 @@ Anotem o número e a página onde acharam (~2 min).
 
 ---
 
-## Limite de corrente por pino
+## ⚡ Limite de corrente por pino
 
 Três categorias de número no datasheet, **não intercambiáveis**:
 
@@ -399,7 +404,7 @@ número específico do ESP32-S3 aqui.
 
 ---
 
-## Exemplo de cálculo — UNO (5V)
+## 📐 Exemplo de cálculo — UNO (5V)
 
 LED vermelho (V_F=2,2V, ROHM SML-D12), I=10mA:
 
@@ -410,7 +415,7 @@ menos corrente, nunca para mais)*
 
 ---
 
-## Exemplo de cálculo — ESP32-S3 (3,3V)
+## 📐 Exemplo de cálculo — ESP32-S3 (3,3V)
 
 Mesmo LED (V_F=2,2V), mesma corrente I=10mA:
 
@@ -421,7 +426,7 @@ pino) tem menos tensão sobrando para "queimar".
 
 ---
 
-## Código
+## 💻 Código
 
 <div class="columns">
 <div>
@@ -484,7 +489,7 @@ Um LED RGB tem 3 chips diferentes dentro do mesmo encapsulamento.
 
 ---
 
-## LED RGB: três LEDs, três V_F diferentes, um só encapsulamento
+## 🌈 LED RGB: três LEDs, três V_F diferentes, um só encapsulamento
 
 **ROHM SMLP34RGBN1W** (4 pinos, ânodo comum + 3 cátodos R/G/B), a
 I_F=5mA:
@@ -506,7 +511,7 @@ datasheets/leds/ROHM_SMLP34RGBN1W_RGB.pdf, página 1.
 
 ---
 
-## V_F não é um valor fixo — Min/Typ/Max
+## 📊 V_F não é um valor fixo — Min/Typ/Max
 
 **Everlight 67-63-RGB0201H-AM** (RGB automotivo), a I_F=20mA:
 
@@ -527,7 +532,7 @@ datasheets/leds/Everlight_67-63-RGB0201H-AM_RGB_MinTypMax.pdf, página 3
 
 ---
 
-## Quando o GPIO não basta
+## ⚠️ Quando o GPIO não basta
 
 Cargas que puxam mais corrente do que o pino aguenta: motor, relé, fita
 de LED, lâmpada.
@@ -540,7 +545,7 @@ entram.
 
 ---
 
-## Transistor como chave
+## 🔀 Transistor como chave
 
 O GPIO só **controla** (base/gate); quem alimenta a carga é uma **fonte
 externa**.
@@ -549,13 +554,13 @@ Duas famílias (BJT / MOSFET) × duas topologias (low-side / high-side).
 
 ---
 
-## Chave low-side: NPN
+## 🔽 Chave low-side: NPN
 
 GPIO HIGH liga a chave (precisa de corrente de base contínua),
 conectando o lado "baixo" da carga ao GND; a fonte externa alimenta o
 lado "alto" direto.
 
-![w:420](../images/npn_chave_low_side.svg)
+![h:400](../images/npn_chave_low_side.svg)
 
 <!--
 Frame 1/4. Diagrama 4.
@@ -563,13 +568,13 @@ Frame 1/4. Diagrama 4.
 
 ---
 
-## Chave low-side: MOSFET-N
+## 🔽 Chave low-side: MOSFET-N
 
 Mesma topologia, mas comandada por **tensão** no gate (não corrente
 contínua) + resistor de **pull-down** para garantir que fique desligada
 quando o GPIO estiver em estado indefinido/flutuante.
 
-![w:460](../images/mosfet_n_chave_low_side.svg)
+![h:400](../images/mosfet_n_chave_low_side.svg)
 
 <!--
 Frame 2/4. Diagrama 5.
@@ -577,12 +582,12 @@ Frame 2/4. Diagrama 5.
 
 ---
 
-## Chave high-side: PNP
+## 🔼 Chave high-side: PNP
 
 Lógica **invertida** (GPIO LOW liga a chave); fica entre a fonte externa
 e o lado "alto" da carga.
 
-![w:420](../images/pnp_chave_high_side.svg)
+![h:400](../images/pnp_chave_high_side.svg)
 
 <!--
 Frame 3/4. Diagrama 6.
@@ -590,14 +595,14 @@ Frame 3/4. Diagrama 6.
 
 ---
 
-## Chave high-side: MOSFET-P
+## 🔼 Chave high-side: MOSFET-P
 
 Mesma lógica invertida, comandada por tensão; resistor de **pull-up** ao
 VCC no gate garante que fique desligada em estado indefinido/flutuante
 (ex.: durante o boot) — mesma função de segurança que o pull-down cumpre
 no MOSFET-N.
 
-![w:460](../images/mosfet_p_chave_high_side.svg)
+![h:330](../images/mosfet_p_chave_high_side.svg)
 
 <!--
 Frame 4/4. Diagrama 7.
@@ -605,7 +610,7 @@ Frame 4/4. Diagrama 7.
 
 ---
 
-## Comparativo rápido
+## ⚖️ Comparativo rápido
 
 | | Acionamento | Lógica |
 |---|---|---|
@@ -626,7 +631,7 @@ qual usar quando.
 
 ---
 
-## Checklist de revisão
+## ✅ Checklist de revisão
 
 - V_F como dado de datasheet (não valor fixo por cor) + fórmula do
   resistor
@@ -639,7 +644,7 @@ qual usar quando.
 
 <!-- _class: lead -->
 
-## Encerramento
+## 👋 Encerramento
 
 Próxima aula: **a mesma fronteira elétrica, no sentido contrário** —
 lendo uma tensão que vem de fora (botão).

@@ -66,8 +66,25 @@ nos diagramas de pull-up/pull-down).
 
 ## Pendente (não gerado por script)
 
-Fotos reais — recortadas das capas dos datasheets já baixados em
-`datasheets/leds/` e `datasheets/botoes/`, ou foto própria de componente
-em mãos: `led_tht`, `led_smd`, `led_rgb`, `botao_pushbutton`, `chave_d2f`.
-Fotos/ícones genéricos de contexto industrial (banco de imagens, sem
-datasheet associado): `industrial_saida`, `industrial_entrada`.
+Fotos reais — não são diagramas gerados, mas registradas aqui por serem
+parte do mesmo levantamento de imagens do storyboard.
+
+**Resolvidas nesta sessão:**
+- `led_smd.png`, `led_rgb.png`, `chave_d2f.png` — recortadas via PyMuPDF
+  (`pip install pymupdf`) da página 1 dos datasheets já baixados em
+  `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
+  — renderizar a página 1 em alta resolução e cortar a região da foto).
+- `industrial_saida_1/2/3.jpg`, `industrial_entrada_1.jpg` — fotos de
+  estoque do Pixabay (licença livre, uso comercial/educacional sem
+  atribuição obrigatória), buscadas via WebSearch/WebFetch. **Nota:** o
+  Pixabay tem cobertura fraca para peças eletrônicas/industriais de nicho
+  (fim de curso, chave-boia, LED THT genérico, pushbutton tátil genérico)
+  — buscas específicas retornam majoritariamente resultados irrelevantes;
+  funcionou bem para fotos amplas de painel/quadro de comando industrial.
+
+**Ainda pendente** (busca em bancos livres não achou boa correspondência):
+`led_tht` (LED THT 5mm genérico), `botao_pushbutton` (tactile 4 pinos
+genérico), foto de sensor de fim de curso (Deck Entrada slide 4), foto de
+chave-boia (Deck Entrada slide 5). Melhor caminho provável: foto própria
+de uma peça do kit em mãos, mais rápido e mais fiel que insistir em banco
+de imagens para esses itens específicos.
