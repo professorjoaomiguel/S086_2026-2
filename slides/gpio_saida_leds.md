@@ -539,7 +539,7 @@ GPIO HIGH liga a chave (precisa de corrente de base contínua),
 conectando o lado "baixo" da carga ao GND; a fonte externa alimenta o
 lado "alto" direto.
 
-![h:400](../images/npn_chave_low_side.svg)
+![h:330](../images/npn_chave_low_side.svg)
 
 <!--
 Frame 1/4. Diagrama 4.
@@ -553,7 +553,7 @@ Mesma topologia, mas comandada por **tensão** no gate (não corrente
 contínua) + resistor de **pull-down** para garantir que fique desligada
 quando o GPIO estiver em estado indefinido/flutuante.
 
-![h:400](../images/mosfet_n_chave_low_side.svg)
+![h:330](../images/mosfet_n_chave_low_side.svg)
 
 <!--
 Frame 2/4. Diagrama 5.
