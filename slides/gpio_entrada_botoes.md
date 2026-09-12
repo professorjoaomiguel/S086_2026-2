@@ -118,11 +118,15 @@ Será que todo botão funciona igual?
 - **NF** (normalmente fechado / *Normally Closed*): repouso = fechado,
   conduzindo. Pressionar **abre** o circuito.
 
+---
+
+## 🔀 NA vs. NF: comparando os dois circuitos
+
 **NA e NF não são "melhor" e "pior" — são escolhas de projeto:** cada um
 define qual estado elétrico existe quando ninguém está acionando o
 dispositivo.
 
-![h:170](../images/botao_na_nf.svg)
+![h:260](../images/botao_na_nf.svg)
 
 <!--
 Diagrama 15. No NF, o estado de repouso já conduz corrente pelo resistor
