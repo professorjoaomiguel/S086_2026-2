@@ -150,7 +150,7 @@ para ninguém usar 45kΩ como resistor externo por engano.
 | — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 11 |
 | — | *(foto real)* `chave_boia`         | foto ✅ resolvida | Chave-boia real — Wikimedia Commons, "Float switch for open tanks.JPG", CC BY 2.5 | Deck Entrada, slide 5 |
 | — | *(genérico/estoque)* `industrial_saida_1/2/3`  | foto ✅ resolvida | Lâmpada de sinalização + contator + painel de máquina em operação — fotos Pixabay (licença livre) | Deck Saída, slides 3-5 |
-| — | *(genérico/estoque)* `industrial_entrada_1`    | foto ✅ resolvida | Botoeira industrial — foto Pixabay (exemplar fotografado é "PUSH TO STOP", usado só como moldura visual) | Deck Entrada, slide 3 |
+| — | *(foto real)* `botoeira_start`     | foto ✅ resolvida | Botoeira START/verde (par START/STOP de máquina industrial) — Wikimedia Commons, "Start_Stop_Power_Switch.jpg" (Michael Holley / Swtpc6800), domínio público | Deck Entrada, slide 3 |
 | — | *(genérico/estoque)* `industrial_entrada_2`    | foto ✅ resolvida | Sensor de fim de curso — Wikimedia Commons, "Limit_Switches.JPG" (Mixabest), CC BY-SA 3.0 | Deck Entrada, slide 4 |
 
 ---

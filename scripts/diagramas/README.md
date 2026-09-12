@@ -73,13 +73,16 @@ levantamento de imagens do storyboard. Todas as 12 fotos da tabela de
   (`pip install pymupdf`) da página 1 dos datasheets já baixados em
   `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
   — renderizar a página 1 em alta resolução e cortar a região da foto).
-- `industrial_saida_1/2/3.jpg`, `industrial_entrada_1.jpg` — fotos de
-  estoque do Pixabay (licença livre, uso comercial/educacional sem
-  atribuição obrigatória), buscadas via WebSearch/WebFetch.
-- `led_tht.jpg`, `chave_boia.jpg`, `industrial_entrada_2.jpg` — fotos do
-  Wikimedia Commons (CC BY / CC BY-SA — **exigem atribuição**, incluída
-  no comentário do slide correspondente e na tabela de
-  `slides/storyboard_gpio.md`). Baixadas via
+- `industrial_saida_1/2/3.jpg` — fotos de estoque do Pixabay (licença
+  livre, uso comercial/educacional sem atribuição obrigatória), buscadas
+  via WebSearch/WebFetch.
+- `led_tht.jpg`, `chave_boia.jpg`, `industrial_entrada_2.jpg`,
+  `botoeira_start.jpg` — fotos do Wikimedia Commons. As três primeiras
+  são CC BY / CC BY-SA (**exigem atribuição**, incluída no comentário do
+  slide correspondente e na tabela de `slides/storyboard_gpio.md`);
+  `botoeira_start.jpg` ("Start_Stop_Power_Switch.jpg", Michael Holley /
+  Swtpc6800) é domínio público (PD-self, atribuição não obrigatória, mas
+  citada mesmo assim por boa prática). Baixadas via
   `https://commons.wikimedia.org/wiki/Special:FilePath/<nome-do-arquivo>`
   (redireciona pro arquivo original — mais confiável do que pedir pro
   WebFetch "listar a URL exata" de uma página de busca, que às vezes

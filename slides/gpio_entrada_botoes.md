@@ -27,15 +27,18 @@ UNO R3 (ATmega328P, 5V) e ESP32-S3-UNO (ESP32-S3, 3,3V), lado a lado.
 
 ---
 
-### 🔴 Uma botoeira aciona a partida de um motor
+### 🟢 Uma botoeira aciona a partida de um motor
 
-![h:420](../images/industrial_entrada_1.jpg)
+![h:420](../images/botoeira_start.jpg)
 
 <!--
-Frame 1/3 — contexto industrial, abertura. Foto: Pixabay (licença livre)
-— botoeira industrial de verdade (o exemplar fotografado é "PUSH TO
-STOP", não "START" — mesmo estilo de botoeira, usado aqui só como
-moldura visual, sem pretensão de ser o botão exato da frase).
+Frame 1/3 — contexto industrial, abertura. Foto: Wikimedia Commons,
+"Start_Stop_Power_Switch.jpg" (Michael Holley / Swtpc6800), domínio
+público —
+https://commons.wikimedia.org/wiki/File:Start_Stop_Power_Switch.jpg —
+botoeira START/verde real (par START/STOP de uma serra jointer
+industrial), coerente com a legenda (substitui a foto anterior, que
+mostrava "PUSH TO STOP" contradizendo o texto).
 -->
 
 ---
