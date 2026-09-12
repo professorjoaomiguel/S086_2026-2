@@ -24,7 +24,7 @@ with schemdraw.Drawing(show=False) as d:
     vcc_dot = d.add(elm.Dot().label("VCC", loc="top"))
     d.add(elm.Resistor().at(vcc_dot.center).down().label("R_pullup\n(externo)"))
     pin = d.add(elm.Dot().label("GPIO (pino)\nsolto: ≈VCC\npressionado: ≈0V", loc="right"))
-    d.add(elm.Switch().at(pin.center).down().label("Botão", loc="left"))
+    d.add(elm.Switch().at(pin.center).down().label("Botão"))
     d.add(elm.Ground())
 
     d.save(str(OUT_DIR / f"{NAME}.svg"))
