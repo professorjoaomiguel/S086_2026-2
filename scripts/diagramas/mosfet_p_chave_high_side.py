@@ -39,7 +39,7 @@ with schemdraw.Drawing(show=False) as d:
     d.add(elm.SourceV().down().label("GPIO\nLOW", loc="bottom"))
     d.add(elm.Ground())
 
-    d.add(elm.Resistor().at(gate_node.center).up().length(1.8).label("R_pullup\n(→ VCC)", loc="bottom"))
+    d.add(elm.Resistor().at(gate_node.center).up().length(2.6).label("R_pullup\n(→ VCC)"))
     d.add(elm.Dot().label("VCC", loc="top"))
 
     d.save(str(OUT_DIR / f"{NAME}.svg"))

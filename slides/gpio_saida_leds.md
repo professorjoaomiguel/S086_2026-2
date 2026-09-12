@@ -581,7 +581,7 @@ VCC no gate garante que fique desligada em estado indefinido/flutuante
 (ex.: durante o boot) — mesma função de segurança que o pull-down cumpre
 no MOSFET-N.
 
-![h:330](../images/mosfet_p_chave_high_side.svg)
+![h:260](../images/mosfet_p_chave_high_side.svg)
 
 <!--
 Frame 4/4. Diagrama 7.
