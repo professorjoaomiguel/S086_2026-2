@@ -66,3 +66,6 @@ classroom_config.json
 
 # --- Marp (apresentacoes) ---
 slides/build/
+
+# --- Worktrees isolados (subagent-driven-development) ---
+.worktrees/
