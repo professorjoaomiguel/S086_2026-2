@@ -2,12 +2,18 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-marp --theme-set=slides/theme/s086.css --allow-local-files --pdf \
-  slides/gpio_saida_leds.md -o slides/build/gpio_saida_leds.pdf
-
-marp --theme-set=slides/theme/s086.css --allow-local-files --pdf \
-  slides/gpio_entrada_botoes.md -o slides/build/gpio_entrada_botoes.pdf
+# Aceita uma lista opcional de arquivos .md como argumentos; sem
+# argumentos, usa os dois decks atuais (comportamento de sempre).
+DECKS=("$@")
+if [ ${#DECKS[@]} -eq 0 ]; then
+  DECKS=(slides/gpio_saida_leds.md slides/gpio_entrada_botoes.md)
+fi
 
 echo "Build concluido:"
-echo "  slides/build/gpio_saida_leds.pdf"
-echo "  slides/build/gpio_entrada_botoes.pdf"
+for deck in "${DECKS[@]}"; do
+  base="$(basename "$deck" .md)"
+  out="slides/build/${base}.pdf"
+  marp --theme-set=slides/theme/s086.css --allow-local-files --pdf \
+    "$deck" -o "$out"
+  echo "  $out"
+done

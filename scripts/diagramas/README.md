@@ -63,6 +63,20 @@ nos diagramas de pull-up/pull-down).
   meio" do outro.
 - Sempre gerar o `.png` e inspecionar visualmente antes de considerar um
   diagrama pronto — sobreposição de texto é comum e só aparece no render.
+- Confirmado de novo nesta rodada: `loc=` explícito em elemento vertical
+  colidindo com outro rótulo próximo (`gpio_pullup.py` — `Botão` com
+  `loc="left"` colidindo com o rótulo do GND; `mosfet_p_chave_high_side.py`
+  — `R_pullup` com `loc="bottom"` colidindo com `VCC`/`R_gate`) — reforça a
+  lição acima: prefira o `loc` padrão e só ajuste depois de ver o render.
+- Fio de retorno/conexão cruzando um rótulo de várias linhas: a correção
+  certa é alongar o trecho vertical antes da curva do fio (dar mais
+  espaço ao rótulo), não mover o rótulo em si.
+- **Lição mais valiosa desta rodada:** quando um diagrama aparece "cortado"
+  no slide renderizado, renderize primeiro o PNG isolado (fora do Marp)
+  antes de supor que o script SchemDraw está com bug — nesta rodada, 3 dos
+  5 diagramas aparentemente cortados eram na verdade overflow do frame do
+  Marp (texto demais empurrando a imagem para baixo), não bug no script. O
+  render isolado diz de imediato qual dos dois problemas você realmente tem.
 
 ## Fotos reais (não geradas por script)
 
