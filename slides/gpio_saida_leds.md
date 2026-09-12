@@ -37,11 +37,15 @@ de interface com o microcontrolador (GPIO como fonte de tensão limitada).
 ![h:420](../images/lampada_sinalizacao.jpg)
 
 <!--
-Frame 1/3 — contexto industrial, abertura. Foto: MakerHero, uso
-comercial/educacional (produto "Sinaleiro LED Iluminado 22mm",
-https://www.makerhero.com/produto/sinaleiro-led-iluminado-22mm/) —
-lâmpada piloto/sinalizadora real, coerente com o título (substitui a
-foto anterior, um painel genérico que não mostrava o componente citado).
+Frame 1/3 — contexto industrial, abertura. Foto: catálogo MakerHero.com.br
+("Sinaleiro LED Iluminado 22mm",
+https://www.makerhero.com/produto/sinaleiro-led-iluminado-22mm/) — foto
+comercial de fornecedor, não licença aberta; uso educacional/ilustrativo
+em material de aula, com fonte citada aqui (diferente das fotos
+Pixabay/Commons usadas em outros slides, que têm licença livre explícita
+— ver scripts/diagramas/README.md) — lâmpada piloto/sinalizadora real,
+coerente com o título (substitui a foto anterior, um painel genérico que
+não mostrava o componente citado).
 -->
 
 ---
