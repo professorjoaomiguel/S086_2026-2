@@ -86,6 +86,13 @@ no contexto da disciplina S086.
   criar primeiro um `slides/storyboard_<topico>.md` (estrutura slide-a-slide,
   diagramas/fotos necessários, fontes) e iterar nele até estabilizar, **antes**
   de gerar o deck Marp definitivo — não pular direto pra produção.
+- **Tema e build de slides:** tema Marp compartilhado em
+  [`slides/theme/s086.css`](../slides/theme/s086.css) (`theme: s086` no
+  frontmatter) — não duplicar CSS por deck. Exportar PDF sempre via
+  [`scripts/build_slides.sh`](../scripts/build_slides.sh), nunca `marp`
+  direto na mão (ele já inclui as flags `--theme-set` e
+  `--allow-local-files`, ambas fáceis de esquecer e que quebram o
+  resultado silenciosamente).
 - **Diagramas de circuito (produção):** scripts em
   [`scripts/diagramas/`](../scripts/diagramas/) (SchemDraw/matplotlib) geram
   os arquivos finais em [`images/`](../images/), usados em slides/guias.

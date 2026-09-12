@@ -60,6 +60,24 @@ acima, a aplicar também na hora de escrever os decks Marp de verdade (o
 storyboard já aponta a divisão macro; a divisão fina de cada slide denso
 acontece na produção).
 
+## Template e convenções de produção
+
+Os dois decks usam o tema Marp compartilhado `slides/theme/s086.css`
+(cores de pausa/revelação/alerta, capa escura, rodapé) — não duplicar
+CSS no frontmatter de cada deck; qualquer ajuste visual (cor, espaçamento)
+vai no arquivo de tema, não em um deck individual.
+
+Rodapé: `footer: '@professorjoaomiguel'` no frontmatter, aplicado a todo
+slide sem exceção (Marp posiciona automaticamente no canto inferior
+esquerdo; a numeração de página via `paginate: true` continua no canto
+inferior direito).
+
+Exportar PDF sempre via `scripts/build_slides.sh` — nunca `marp` direto
+na linha de comando. O script já inclui `--theme-set` e
+`--allow-local-files`: esquecer o primeiro gera um deck sem tema (volta
+pro tema `default` puro); esquecer o segundo gera um PDF com todas as
+imagens em branco, sem erro visível no terminal.
+
 ## Diagramas e fotos necessários
 
 Scripts em `scripts/diagramas/`, saída (`.svg` + `.png`) em `images/`.
