@@ -1,29 +1,8 @@
 ---
 marp: true
-theme: default
+theme: s086
 paginate: true
-style: |
-  section.lead {
-    background: #1a1a2e;
-    color: white;
-  }
-  section.lead h1,
-  section.lead h2,
-  section.lead h3 {
-    color: white;
-  }
-  section.pausa-previsao { background: #eef3ff; }
-  section.pausa-calculo { background: #fff8e1; }
-  section.pausa-garimpo { background: #eafaf0; }
-  section.revelacao { background: #f7f7f7; }
-  .columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-  }
-  .columns h3 { margin-top: 0; }
-  table { font-size: 0.85em; }
-  img { display: block; margin: 0 auto; }
+footer: '@professorjoaomiguel'
 ---
 
 <!-- _class: lead -->
