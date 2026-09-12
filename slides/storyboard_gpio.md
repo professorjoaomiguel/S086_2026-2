@@ -150,7 +150,8 @@ para ninguém usar 45kΩ como resistor externo por engano.
 | — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 11 |
 | — | *(foto real)* `chave_boia`         | foto ✅ resolvida | Chave-boia real — Wikimedia Commons, "Float switch for open tanks.JPG", CC BY 2.5 | Deck Entrada, slide 5 |
 | — | *(foto real)* `lampada_sinalizacao` | foto ✅ resolvida | Lâmpada piloto/sinalizadora 22mm (lente translúcida vermelha) — vendor MakerHero, "Sinaleiro LED Iluminado 22mm" | Deck Saída, slide 3 |
-| — | *(genérico/estoque)* `industrial_saida_2/3`  | foto ✅ resolvida | Contator + painel de máquina em operação — fotos Pixabay (licença livre) | Deck Saída, slides 4-5 |
+| — | *(foto real)* `contator`           | foto ✅ resolvida | Contator tripolar real (IEK KMI-11810, bobina + contatos visíveis) — Wikimedia Commons, "Contactor DIN IEK.jpg" (autor Kae), CC BY-SA 3.0/GFDL (exige atribuição) | Deck Saída, slide 4 |
+| — | *(genérico/estoque)* `industrial_saida_3`    | foto ✅ resolvida | Painel de máquina em operação — foto Pixabay (licença livre) | Deck Saída, slide 5 |
 | — | *(foto real)* `botoeira_start`     | foto ✅ resolvida | Botoeira START/verde (par START/STOP de máquina industrial) — Wikimedia Commons, "Start_Stop_Power_Switch.jpg" (Michael Holley / Swtpc6800), domínio público | Deck Entrada, slide 3 |
 | — | *(genérico/estoque)* `industrial_entrada_2`    | foto ✅ resolvida | Sensor de fim de curso — Wikimedia Commons, "Limit_Switches.JPG" (Mixabest), CC BY-SA 3.0 | Deck Entrada, slide 4 |
 

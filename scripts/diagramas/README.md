@@ -73,9 +73,17 @@ levantamento de imagens do storyboard. Todas as 12 fotos da tabela de
   (`pip install pymupdf`) da página 1 dos datasheets já baixados em
   `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
   — renderizar a página 1 em alta resolução e cortar a região da foto).
-- `industrial_saida_2/3.jpg` — fotos de estoque do Pixabay (licença
-  livre, uso comercial/educacional sem atribuição obrigatória), buscadas
+- `industrial_saida_3.jpg` — foto de estoque do Pixabay (licença
+  livre, uso comercial/educacional sem atribuição obrigatória), buscada
   via WebSearch/WebFetch.
+- `contator.jpg` — Wikimedia Commons, "Contactor DIN IEK.jpg" (autor Kae,
+  CC BY-SA 3.0 / GFDL, **exige atribuição**, incluída no comentário do
+  slide correspondente e na tabela de `slides/storyboard_gpio.md`) —
+  contator tripolar (3 polos) real, IEK KMI-11810, mostrando claramente
+  bobina (terminais A1/A2) e contatos principais (L1/L2/L3 → T1/T2/T3).
+  Baixada via `https://commons.wikimedia.org/wiki/Special:FilePath/<nome-do-arquivo>`.
+  Substitui `industrial_saida_2.jpg` (foto Pixabay de chão de fábrica
+  genérico que não mostrava o componente citado).
 - `lampada_sinalizacao.jpg` — foto de produto do vendor MakerHero
   ("Sinaleiro LED Iluminado 22mm",
   https://www.makerhero.com/produto/sinaleiro-led-iluminado-22mm/), foto

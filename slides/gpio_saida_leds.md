@@ -48,10 +48,13 @@ foto anterior, um painel genérico que não mostrava o componente citado).
 
 ### ⚙️ Um controlador liga um contator
 
-![h:420](../images/industrial_saida_2.jpg)
+![h:420](../images/contator.jpg)
 
 <!--
-Frame 2/3. Foto: Pixabay — chão de fábrica/automação industrial.
+Frame 2/3. Foto: Wikimedia Commons, "Contactor DIN IEK.jpg" (autor Kae),
+CC BY-SA 3.0/GFDL — contator real (bobina + contatos), coerente com o
+título (substitui a foto anterior, de chão de fábrica genérico que não
+mostrava o componente citado).
 -->
 
 ---
