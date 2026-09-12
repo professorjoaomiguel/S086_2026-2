@@ -236,7 +236,7 @@ Pino de **propósito geral**, configurável como `INPUT` ou `OUTPUT` via
 - Faixa que garante **HIGH** (V_IH mín.)
 - Uma **zona indefinida** no meio
 
-**É essa zona que o ruído do slide 14 fica cruzando.**
+**É essa zona que o ruído do slide 15 fica cruzando.**
 
 ---
 
@@ -316,7 +316,7 @@ indefinida**.
 ![w:680](../images/botao_forma_onda_flutuante.svg)
 
 <!--
-Diagrama 10, reconectando com o gráfico do slide 14.
+Diagrama 10, reconectando com o gráfico do slide 15.
 -->
 
 ---
@@ -484,7 +484,7 @@ void loop() {
 ## 📈 Bounce revisitado: como lidar com ele
 
 O pull-up/pull-down resolve o **flutuante**, mas **não elimina o
-bounce** nas transições (visto no slide 13, diagrama 9).
+bounce** nas transições (visto no slide 14, diagrama 9).
 
 Solução (*debounce* por software/hardware) fica para outra aula — a
 título de gancho, a técnica mais simples: **ler, esperar ~50ms, ler de

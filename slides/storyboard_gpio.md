@@ -136,20 +136,20 @@ para ninguém usar 45kΩ como resistor externo por engano.
 | 6 | `pnp_chave_high_side`         | esquemático      | PNP como chave high-side: GPIO→R base (lógica invertida); carga no coletor | Deck Saída, slide 37 |
 | 7 | `mosfet_p_chave_high_side`    | esquemático      | MOSFET-P como chave high-side: GPIO→R gate (+pull-up ao VCC); lógica invertida; carga no dreno | Deck Saída, slide 38 |
 | 8 | `botao_circuito_basico`       | esquemático      | Fonte genérica + resistor + botão, sem microcontrolador                   | Deck Entrada, slide 7 |
-| 9 | `botao_forma_onda_bounce`     | forma de onda    | Tensão × tempo: idle → pressiona (bounce) → segura → solta (bounce) → idle | Deck Entrada, slide 13 |
-| 10| `botao_forma_onda_flutuante` | forma de onda    | Mesmo gráfico, mas sem resistor de referência: ruído aleatório contínuo   | Deck Entrada, slide 14 e 23 |
-| 11| `gpio_pullup`                 | esquemático      | Resistor externo entre VCC e o pino; botão para GND → **entrada ativo-baixa** (botão aterra o pino) | Deck Entrada, slide 25 |
-| 12| `gpio_pulldown`               | esquemático      | Resistor externo entre GND e o pino; botão para VCC → **entrada ativo-alta** (botão leva o pino ao VCC) | Deck Entrada, slide 27 |
-| 13| `niveis_logicos_limiares`     | gráfico (faixas) | Duas retas de tensão (0→VCC) lado a lado: ATmega328P (V_IL≤1,5V, V_IH≥3,0V @5V) e ESP32-S3 (V_IL≤0,825V, V_IH≥2,475V @3,3V), com zonas LOW/indefinido/HIGH marcadas — valores calculados de V_IL=0,3×VCC/V_IH=0,6×VCC (ATmega328P) e V_IL=0,25×VDD/V_IH=0,75×VDD (ESP32-S3), conferir contra a edição exata do datasheet no guia | Deck Entrada, slide 19 |
+| 9 | `botao_forma_onda_bounce`     | forma de onda    | Tensão × tempo: idle → pressiona (bounce) → segura → solta (bounce) → idle | Deck Entrada, slide 14 |
+| 10| `botao_forma_onda_flutuante` | forma de onda    | Mesmo gráfico, mas sem resistor de referência: ruído aleatório contínuo   | Deck Entrada, slide 15 e 24 |
+| 11| `gpio_pullup`                 | esquemático      | Resistor externo entre VCC e o pino; botão para GND → **entrada ativo-baixa** (botão aterra o pino) | Deck Entrada, slide 26 |
+| 12| `gpio_pulldown`               | esquemático      | Resistor externo entre GND e o pino; botão para VCC → **entrada ativo-alta** (botão leva o pino ao VCC) | Deck Entrada, slide 28 |
+| 13| `niveis_logicos_limiares`     | gráfico (faixas) | Duas retas de tensão (0→VCC) lado a lado: ATmega328P (V_IL≤1,5V, V_IH≥3,0V @5V) e ESP32-S3 (V_IL≤0,825V, V_IH≥2,475V @3,3V), com zonas LOW/indefinido/HIGH marcadas — valores calculados de V_IL=0,3×VCC/V_IH=0,6×VCC (ATmega328P) e V_IL=0,25×VDD/V_IH=0,75×VDD (ESP32-S3), conferir contra a edição exata do datasheet no guia | Deck Entrada, slide 20 |
 | 14| `gpio_interface_conceito`     | bloco            | MICROCONTROLADOR/GPIO no centro, seta para SAÍDA (LED) e seta vinda de ENTRADA (botão) — "GPIO é a interface elétrica" | Deck Saída, slide 7 (frame final de 2); Deck Entrada, slide 6 (retomada, slide único) |
-| 15| `botao_na_nf`                 | esquemático      | Dois botões lado a lado no mesmo circuito (fonte+resistor genérico): NA (aberto em repouso, sem corrente) e NF (fechado em repouso, corrente contínua ≈V/R) — anotar a corrente de repouso em cada um | Deck Entrada, slide 9 |
+| 15| `botao_na_nf`                 | esquemático      | Dois botões lado a lado no mesmo circuito (fonte+resistor genérico): NA (aberto em repouso, sem corrente) e NF (fechado em repouso, corrente contínua ≈V/R) — anotar a corrente de repouso em cada um | Deck Entrada, slide 10 |
 | — | *(foto real)* `led_tht`            | foto ✅ resolvida | LED de 5mm (THT) genérico — Wikimedia Commons, "5mm Red LED.jpg", CC BY-SA 2.0 | Deck Saída, slide 9 |
 | — | *(foto real)* `led_smd`            | foto ✅ resolvida | Chip SMD ROHM SML-D12 — recortada da capa do datasheet (PyMuPDF)         | Deck Saída, slide 10 |
 | — | *(foto real)* `led_rgb`            | foto ✅ resolvida | LED RGB PLCC6 — recortada da capa do datasheet ROHM SMLP34 (PyMuPDF)     | Deck Saída, slide 11 |
-| — | *(foto real)* `botao_pushbutton`   | foto ✅ resolvida | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit) — foto de catálogo Eletrogate.com.br (fornecedor de componentes, não licença aberta — uso educacional com fonte citada) | Deck Entrada, slide 10 |
-| — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 11 |
+| — | *(foto real)* `botao_pushbutton`   | foto ✅ resolvida | Tactile pushbutton 4 pinos (NA típico, o que os alunos usam no kit) — foto de catálogo Eletrogate.com.br (fornecedor de componentes, não licença aberta — uso educacional com fonte citada) | Deck Entrada, slide 11 |
+| — | *(foto real)* `chave_d2f`          | foto ✅ resolvida | Microchave Omron D2F — recortada da capa do datasheet (PyMuPDF), mostra COM/NO/NC | Deck Entrada, slide 12 |
 | — | *(foto real)* `chave_boia`         | foto ✅ resolvida | Chave-boia real — Wikimedia Commons, "Float switch for open tanks.JPG", CC BY 2.5 | Deck Entrada, slide 5 |
-| — | *(foto real)* `lampada_sinalizacao` | foto ✅ resolvida | Lâmpada piloto/sinalizadora 22mm (lente translúcida vermelha) — vendor MakerHero, "Sinaleiro LED Iluminado 22mm" | Deck Saída, slide 3 |
+| — | *(foto real)* `lampada_sinalizacao` | foto ✅ resolvida | Lâmpada piloto/sinalizadora 22mm (lente translúcida vermelha) — catálogo MakerHero.com.br, "Sinaleiro LED Iluminado 22mm" (fornecedor de componentes, não licença aberta — uso educacional/ilustrativo com fonte citada) | Deck Saída, slide 3 |
 | — | *(foto real)* `contator`           | foto ✅ resolvida | Contator tripolar real (IEK KMI-11810, bobina + contatos visíveis) — Wikimedia Commons, "Contactor DIN IEK.jpg" (autor Kae), CC BY-SA 3.0/GFDL (exige atribuição) | Deck Saída, slide 4 |
 | — | *(genérico/estoque)* `industrial_saida_3`    | foto ✅ resolvida | Painel de máquina em operação — foto Pixabay (licença livre) | Deck Saída, slide 5 |
 | — | *(foto real)* `botoeira_start`     | foto ✅ resolvida | Botoeira START/verde (par START/STOP de máquina industrial) — Wikimedia Commons, "Start_Stop_Power_Switch.jpg" (Michael Holley / Swtpc6800), domínio público | Deck Entrada, slide 3 |
@@ -211,31 +211,32 @@ para ninguém usar 45kΩ como resistor externo por engano.
 6. **De volta à interface elétrica do GPIO** — retomada do diagrama 14 (visto na aula de saída): hoje o pino passa a **ler** uma tensão que vem de fora, em vez de impô-la. Mesma fronteira, sentido contrário. *Diagrama 14.*
 7. **Circuito básico: fonte + resistor + botão** — sem microcontrolador ainda, só pra observar a tensão em um ponto do circuito ao apertar/soltar. *Diagrama 8.*
 8. **🔮 Pausa — Previsão** — "O botão fecha o circuito ou abre o circuito quando está solto (sem ninguém tocando)? Será que todo botão funciona igual?"
-9. **NA vs. NF: os dois tipos de contato** — a maioria dos botões usados com GPIO é **NA** (normalmente aberto / *Normally Open*, NO): em repouso o contato está aberto (sem caminho de corrente), pressionar fecha o circuito. Existe também o **NF** (normalmente fechado / *Normally Closed*, NC): em repouso o contato já está fechado (conduzindo), pressionar é que abre o circuito. **NA e NF não são "melhor" e "pior" — são escolhas de projeto: cada um define qual estado elétrico existe quando ninguém está acionando o dispositivo.** No NF esse estado de repouso já conduz corrente pelo resistor de referência (relevante em projetos sensíveis a consumo, ex. bateria); em compensação, é justamente por já estar "fechado por padrão" que o NF costuma aparecer em circuitos de segurança/fail-safe, onde um fio rompido já é detectado como acionamento — como o sensor de fim de curso do slide 4. (Detalhamento de consumo/fail-safe fica para o guia.) *Diagrama 15.*
-10. **Botão de verdade — o que você já usou** — foto: tactile pushbutton de 4 pinos (o do kit), quase sempre NA. (frame 1/2.)
-11. **Chave de verdade — COM/NO/NC no mesmo componente** — foto: microchave Omron D2F, capa do datasheet mostrando várias variantes e o diagrama de terminais COM/NO/NC — uma única chave mecânica pode oferecer os dois contatos ao mesmo tempo (você escolhe qual fiar), diferente do pushbutton do frame anterior, que só tem NA. (frame 2/2.)
-12. **🔮 Pausa — Previsão** — "Sem nenhum resistor conectado, o que a tensão faz no ponto entre o botão e o fio, quando ninguém está tocando? Desenhem um palpite do gráfico tensão × tempo." Comparamos com os dados reais nos próximos dois slides.
-13. **Forma de onda: o que a tensão faz ao pressionar/soltar** — nível parado (idle), transição ao pressionar, pequenas "quicadas" (bounce, ruído mecânico do contato) antes de estabilizar, e o mesmo ao soltar. (Exemplo usa um botão NA, o caso padrão.) *Diagrama 9.*
-14. **E sem nenhum resistor de referência?** — mesmo tipo de gráfico, mas agora o ponto fica "flutuando": ruído aleatório contínuo, não só nas transições — antecipa o problema antes de falar em GPIO. *Diagrama 10.*
-15. **O que é um GPIO** — pino de propósito geral, configurável como `INPUT` ou `OUTPUT` via `pinMode()`.
-16. **O que é um nível lógico** — HIGH e LOW são uma interpretação digital de uma faixa de tensão; quem decide é o circuito de entrada do chip.
-17. **Limiares dependem da tensão de operação e da tecnologia** — faixa que garante LOW (V_IL máx.), faixa que garante HIGH (V_IH mín.), e uma **zona indefinida** no meio — é essa zona que o ruído do slide 14 fica cruzando.
-18. **🔍 Pausa — Garimpo no datasheet** — abram `datasheets/ESP32-S3_Datasheet_v2.2_Espressif.pdf` e achem, na tabela de características DC, o valor de V_IH mínimo (tensão de entrada garantida como HIGH). Anotem o valor e como ele se relaciona com VDD (~2 min).
-19. **Na prática: ATmega328P (5V) vs ESP32-S3 (3,3V)** — diagrama de faixas de tensão (0V até VCC) para os dois chips lado a lado, com V_IL/V_IH marcados — mais didático que só uma tabela. Valores calculados a partir das frações especificadas no datasheet de cada chip (V_IL/V_IH como fração de VCC/VDD — ver tabela do diagrama 13); confirmar sempre contra a edição exata do datasheet usada no guia. *Diagrama 13.*
-20. **Alerta rápido** — não ligar uma saída de 5V direto em um pino de entrada 3,3V-only: ultrapassa o V_IH e também o limite absoluto de tensão do pino — no ESP32-S3 esse limite é VDD+0,3V para os pinos do domínio padrão de 3,3V (**3,6V** com VDD=3,3V; alguns pinos especiais do chip operam em outro domínio de tensão — não generalizar sem checar o datasheet). Não é um risco só teórico: 5V está bem acima desse teto. Colocado logo aqui porque é exatamente o diagrama 13 (slide anterior) que torna essa diferença de domínio de tensão visualmente explícita.
-21. **E se os níveis de tensão forem diferentes?** — quando um sensor/módulo 5V precisa conversar com um GPIO 3,3V-only (ou vice-versa), existem circuitos de adaptação de nível (*level shifting*). Fica só o mapa mental de que a solução existe — as técnicas específicas (divisor resistivo, level-shifter dedicado, etc.) ficam para outra aula/o guia técnico, junto com o dimensionamento de transistor visto na aula de saída.
-22. **O mesmo botão, agora num GPIO** — trocamos a fonte genérica do slide 7 pelo pino do microcontrolador; a pergunta agora é "o pino consegue decidir HIGH ou LOW com confiança?"
-23. **O problema: entrada flutuante no GPIO** — reconecta com o gráfico do slide 14: sem pull-up/pull-down, o pino passa a maior parte do tempo na zona indefinida. *Diagrama 10.*
-24. **🔮 Pausa — Previsão/Proposta** — "Com o que já sabemos sobre resistores (das aulas de LED): como vocês resolveriam o problema da entrada flutuante? Proponham uma solução antes de eu mostrar as duas oficiais."
-25. **Solução 1: Pull-up → entrada ativo-baixa** — resistor entre VCC e o pino; o botão (NA) **aterra** o pino ao ser pressionado. Repouso = HIGH, pressionado = LOW. Pull-up **é**, por construção, uma entrada ativo-baixa. *Diagrama 11.*
-26. **Pull-up interno** — `pinMode(pino, INPUT_PULLUP)` — dispensa resistor externo, continua sendo ativo-baixa. Código lado a lado UNO / ESP32-S3-UNO.
-27. **Solução 2: Pull-down → entrada ativo-alta** — resistor entre GND e o pino; o botão (NA) leva o pino ao VCC ao ser pressionado. Repouso = LOW, pressionado = HIGH. Pull-down **é**, por construção, uma entrada ativo-alta. *Diagrama 12.*
-28. **Ativo-alto vs. ativo-baixo — tabela-resumo** — pull-up = ativo-baixo (botão aterra), pull-down = ativo-alto (botão leva ao VCC); e o paralelo com a aula de saída: GPIO fonte de corrente ↔ ativo-alto, GPIO sumidouro de corrente ↔ ativo-baixo — a mesma simetria elétrica nos dois sentidos. (Nota: com um botão NF a lógica de repouso/pressionado se inverte — reforça por que "ativo-alto/baixo" depende da fiação e do tipo de contato, não é uma propriedade fixa do botão.)
-29. **🔮 Pausa — Previsão** — "Com `INPUT_PULLUP`, o que o Monitor Serial vai mostrar quando o botão estiver solto? E quando pressionado? Prevejam antes de rodar o código."
-30. **Código completo** — leitura de botão com `INPUT_PULLUP`, UNO e ESP32-S3-UNO lado a lado, `Serial.println` do estado.
-31. **Bounce revisitado: como lidar com ele** — o pull-up/pull-down resolve o "flutuante" mas não elimina o bounce nas transições (visto no slide 13, diagrama 9); solução (debounce por software/hardware) fica para outra aula — a título de gancho, cita-se a técnica mais simples (ler, esperar ~50ms, ler de novo) como prévia.
-32. **Checklist de revisão** — nível lógico e seus limiares, NA vs NF, flutuante vs pull-up vs pull-down, ativo-alto vs ativo-baixo, pull-up interno vs externo, bounce, adaptação de nível 3,3V↔5V.
-33. **Encerramento**.
+9. **NA vs. NF: os dois tipos de contato** — a maioria dos botões usados com GPIO é **NA** (normalmente aberto / *Normally Open*, NO): em repouso o contato está aberto (sem caminho de corrente), pressionar fecha o circuito. Existe também o **NF** (normalmente fechado / *Normally Closed*, NC): em repouso o contato já está fechado (conduzindo), pressionar é que abre o circuito.
+10. **NA vs. NF: comparando os dois circuitos** — **NA e NF não são "melhor" e "pior" — são escolhas de projeto: cada um define qual estado elétrico existe quando ninguém está acionando o dispositivo.** No NF esse estado de repouso já conduz corrente pelo resistor de referência (relevante em projetos sensíveis a consumo, ex. bateria); em compensação, é justamente por já estar "fechado por padrão" que o NF costuma aparecer em circuitos de segurança/fail-safe, onde um fio rompido já é detectado como acionamento — como o sensor de fim de curso do slide 4. (Detalhamento de consumo/fail-safe fica para o guia.) *Diagrama 15.*
+11. **Botão de verdade — o que você já usou** — foto: tactile pushbutton de 4 pinos (o do kit), quase sempre NA. (frame 1/2.)
+12. **Chave de verdade — COM/NO/NC no mesmo componente** — foto: microchave Omron D2F, capa do datasheet mostrando várias variantes e o diagrama de terminais COM/NO/NC — uma única chave mecânica pode oferecer os dois contatos ao mesmo tempo (você escolhe qual fiar), diferente do pushbutton do frame anterior, que só tem NA. (frame 2/2.)
+13. **🔮 Pausa — Previsão** — "Sem nenhum resistor conectado, o que a tensão faz no ponto entre o botão e o fio, quando ninguém está tocando? Desenhem um palpite do gráfico tensão × tempo." Comparamos com os dados reais nos próximos dois slides.
+14. **Forma de onda: o que a tensão faz ao pressionar/soltar** — nível parado (idle), transição ao pressionar, pequenas "quicadas" (bounce, ruído mecânico do contato) antes de estabilizar, e o mesmo ao soltar. (Exemplo usa um botão NA, o caso padrão.) *Diagrama 9.*
+15. **E sem nenhum resistor de referência?** — mesmo tipo de gráfico, mas agora o ponto fica "flutuando": ruído aleatório contínuo, não só nas transições — antecipa o problema antes de falar em GPIO. *Diagrama 10.*
+16. **O que é um GPIO** — pino de propósito geral, configurável como `INPUT` ou `OUTPUT` via `pinMode()`.
+17. **O que é um nível lógico** — HIGH e LOW são uma interpretação digital de uma faixa de tensão; quem decide é o circuito de entrada do chip.
+18. **Limiares dependem da tensão de operação e da tecnologia** — faixa que garante LOW (V_IL máx.), faixa que garante HIGH (V_IH mín.), e uma **zona indefinida** no meio — é essa zona que o ruído do slide 15 fica cruzando.
+19. **🔍 Pausa — Garimpo no datasheet** — abram `datasheets/ESP32-S3_Datasheet_v2.2_Espressif.pdf` e achem, na tabela de características DC, o valor de V_IH mínimo (tensão de entrada garantida como HIGH). Anotem o valor e como ele se relaciona com VDD (~2 min).
+20. **Na prática: ATmega328P (5V) vs ESP32-S3 (3,3V)** — diagrama de faixas de tensão (0V até VCC) para os dois chips lado a lado, com V_IL/V_IH marcados — mais didático que só uma tabela. Valores calculados a partir das frações especificadas no datasheet de cada chip (V_IL/V_IH como fração de VCC/VDD — ver tabela do diagrama 13); confirmar sempre contra a edição exata do datasheet usada no guia. *Diagrama 13.*
+21. **Alerta rápido** — não ligar uma saída de 5V direto em um pino de entrada 3,3V-only: ultrapassa o V_IH e também o limite absoluto de tensão do pino — no ESP32-S3 esse limite é VDD+0,3V para os pinos do domínio padrão de 3,3V (**3,6V** com VDD=3,3V; alguns pinos especiais do chip operam em outro domínio de tensão — não generalizar sem checar o datasheet). Não é um risco só teórico: 5V está bem acima desse teto. Colocado logo aqui porque é exatamente o diagrama 13 (slide anterior) que torna essa diferença de domínio de tensão visualmente explícita.
+22. **E se os níveis de tensão forem diferentes?** — quando um sensor/módulo 5V precisa conversar com um GPIO 3,3V-only (ou vice-versa), existem circuitos de adaptação de nível (*level shifting*). Fica só o mapa mental de que a solução existe — as técnicas específicas (divisor resistivo, level-shifter dedicado, etc.) ficam para outra aula/o guia técnico, junto com o dimensionamento de transistor visto na aula de saída.
+23. **O mesmo botão, agora num GPIO** — trocamos a fonte genérica do slide 7 pelo pino do microcontrolador; a pergunta agora é "o pino consegue decidir HIGH ou LOW com confiança?"
+24. **O problema: entrada flutuante no GPIO** — reconecta com o gráfico do slide 15: sem pull-up/pull-down, o pino passa a maior parte do tempo na zona indefinida. *Diagrama 10.*
+25. **🔮 Pausa — Previsão/Proposta** — "Com o que já sabemos sobre resistores (das aulas de LED): como vocês resolveriam o problema da entrada flutuante? Proponham uma solução antes de eu mostrar as duas oficiais."
+26. **Solução 1: Pull-up → entrada ativo-baixa** — resistor entre VCC e o pino; o botão (NA) **aterra** o pino ao ser pressionado. Repouso = HIGH, pressionado = LOW. Pull-up **é**, por construção, uma entrada ativo-baixa. *Diagrama 11.*
+27. **Pull-up interno** — `pinMode(pino, INPUT_PULLUP)` — dispensa resistor externo, continua sendo ativo-baixa. Código lado a lado UNO / ESP32-S3-UNO.
+28. **Solução 2: Pull-down → entrada ativo-alta** — resistor entre GND e o pino; o botão (NA) leva o pino ao VCC ao ser pressionado. Repouso = LOW, pressionado = HIGH. Pull-down **é**, por construção, uma entrada ativo-alta. *Diagrama 12.*
+29. **Ativo-alto vs. ativo-baixo — tabela-resumo** — pull-up = ativo-baixo (botão aterra), pull-down = ativo-alto (botão leva ao VCC); e o paralelo com a aula de saída: GPIO fonte de corrente ↔ ativo-alto, GPIO sumidouro de corrente ↔ ativo-baixo — a mesma simetria elétrica nos dois sentidos. (Nota: com um botão NF a lógica de repouso/pressionado se inverte — reforça por que "ativo-alto/baixo" depende da fiação e do tipo de contato, não é uma propriedade fixa do botão.)
+30. **🔮 Pausa — Previsão** — "Com `INPUT_PULLUP`, o que o Monitor Serial vai mostrar quando o botão estiver solto? E quando pressionado? Prevejam antes de rodar o código."
+31. **Código completo** — leitura de botão com `INPUT_PULLUP`, UNO e ESP32-S3-UNO lado a lado, `Serial.println` do estado.
+32. **Bounce revisitado: como lidar com ele** — o pull-up/pull-down resolve o "flutuante" mas não elimina o bounce nas transições (visto no slide 14, diagrama 9); solução (debounce por software/hardware) fica para outra aula — a título de gancho, cita-se a técnica mais simples (ler, esperar ~50ms, ler de novo) como prévia.
+33. **Checklist de revisão** — nível lógico e seus limiares, NA vs NF, flutuante vs pull-up vs pull-down, ativo-alto vs ativo-baixo, pull-up interno vs externo, bounce, adaptação de nível 3,3V↔5V.
+34. **Encerramento**.
 
 ---
 
@@ -258,7 +259,7 @@ fonte, não copiar sem atribuição):
   documentando um limite conservador (não o absoluto do chip), que serve de
   modelo para como apresentar o dado equivalente do ESP32-S3 no guia; (d)
   técnica de debounce por software mostrada em código (lê, espera ~50ms,
-  lê de novo antes de aceitar o estado) — referência direta para o slide 31
+  lê de novo antes de aceitar o estado) — referência direta para o slide 32
   do Deck Entrada; (e) critério de dois parâmetros para escolher um
   transistor (corrente e tensão máximas entre coletor e emissor) — usado no
   slide 39 do Deck Saída.
@@ -304,13 +305,13 @@ do PDF oficial:
   `documentation.espressif.com` (domínio oficial do fabricante — confirmado
   na capa do PDF). Tabela DC Characteristics (VDD=3,3V): V_IH(mín.) =
   0,75×VDD (até VDD+0,3V), V_IL(máx.) = 0,25×VDD → LOW garantido ≤0,825V,
-  HIGH garantido ≥2,475V (é o número que o garimpo do slide 18 do Deck
+  HIGH garantido ≥2,475V (é o número que o garimpo do slide 19 do Deck
   Entrada deve encontrar); **limite absoluto de tensão = VDD+0,3V = 3,6V
   para os pinos do domínio padrão de 3,3V (VDD1)** — **não generalizar para
   "qualquer pino"**: o ESP32-S3 tem pinos de domínio de tensão diferente
   (ex.: IO47/IO48, usados em configurações de flash/PSRAM octal, operam a
   1,8V) — confirmar no guia a que domínio cada pino usado no exemplo
-  pertence antes de citar 3,6V como limite (número usado no slide 20 do
+  pertence antes de citar 3,6V como limite (número usado no slide 21 do
   Deck Entrada, com essa mesma ressalva). I_OH=40mA e I_OL=28mA são
   correntes de saída sob condição de teste específica (PAD_DRIVER=3,
   V_OH≥2,64V / V_OL=0,495V), não uma corrente de projeto recomendada;
@@ -366,13 +367,13 @@ existem em algum datasheet real.
 - **`Omron_D2F_Microswitch_NA-NF.pdf`** — Omron D2F, microchave ultra-
   subminiatura, domínio oficial `omronfs.omron.com`. Capa mostra fotos reais
   de várias variantes (pino, alavanca, rolete) e o diagrama de terminais
-  **COM / NO / NC** — usado no slide 11 do Deck Entrada como exemplo real de
+  **COM / NO / NC** — usado no slide 12 do Deck Entrada como exemplo real de
   uma chave que expõe os dois contatos (NA e NF) ao mesmo tempo, diferente
   do pushbutton simples do kit (que só tem NA). Nota para o guia: o D2F é
   SPDT (um COM chaveando entre NO e NC) — não são "dois produtos, um NA e
   um NF", é a mesma chave com os dois contatos disponíveis; vale deixar essa
   nuance explícita para não confundir com a dicotomia NA-vs-NF de dois
-  componentes diferentes usada no slide 9.
+  componentes diferentes usada no slide 10.
 
 ## Guias técnicos (espelham os decks, com código completo)
 
@@ -393,11 +394,11 @@ datasheets de LED (`datasheets/leds/`) e o datasheet de chave
 (`datasheets/botoes/`), ao lado dos datasheets oficiais de microcontrolador.
 
 **Nota sobre os garimpos de datasheet (slides de pausa 🔍):** as respostas
-que os alunos vão achar nos slides 25 (Deck Saída) e 18 (Deck Entrada) são
+que os alunos vão achar nos slides 25 (Deck Saída) e 19 (Deck Entrada) são
 exatamente os números documentados nas seções acima — o professor já sabe
 onde estão (página/tabela) para ajudar quem travar.
 
-**Contagem final:** Deck Saída 41 slides, Deck Entrada 33 slides — acima da
+**Contagem final:** Deck Saída 41 slides, Deck Entrada 34 slides — acima da
 faixa 20-22 sugerida em avaliações anteriores, e conscientemente assim: por
 diretriz do professor, contagem de slides não é fator limitante quando o
 ritmo é cinematográfico (ver nota no topo do arquivo). Os slides dos frames
