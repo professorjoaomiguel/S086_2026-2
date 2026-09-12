@@ -34,14 +34,14 @@ de interface com o microcontrolador (GPIO como fonte de tensão limitada).
 
 ### 🏭 Um CLP aciona uma lâmpada de sinalização
 
-![h:420](../images/industrial_saida_1.jpg)
+![h:420](../images/lampada_sinalizacao.jpg)
 
 <!--
-Frame 1/3 — contexto industrial, abertura. Frase + imagem, sem mais
-explicação ainda — a ideia é só ambientar. Foto: Pixabay (licença livre
-para uso comercial/educacional, sem atribuição obrigatória) — painel de
-máquina com botão luminoso, usado aqui como metáfora visual de
-sinalização industrial.
+Frame 1/3 — contexto industrial, abertura. Foto: MakerHero, uso
+comercial/educacional (produto "Sinaleiro LED Iluminado 22mm",
+https://www.makerhero.com/produto/sinaleiro-led-iluminado-22mm/) —
+lâmpada piloto/sinalizadora real, coerente com o título (substitui a
+foto anterior, um painel genérico que não mostrava o componente citado).
 -->
 
 ---

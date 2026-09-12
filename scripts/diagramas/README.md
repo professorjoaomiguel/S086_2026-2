@@ -73,9 +73,15 @@ levantamento de imagens do storyboard. Todas as 12 fotos da tabela de
   (`pip install pymupdf`) da página 1 dos datasheets já baixados em
   `datasheets/leds/` e `datasheets/botoes/` (script ad-hoc, não versionado
   — renderizar a página 1 em alta resolução e cortar a região da foto).
-- `industrial_saida_1/2/3.jpg` — fotos de estoque do Pixabay (licença
+- `industrial_saida_2/3.jpg` — fotos de estoque do Pixabay (licença
   livre, uso comercial/educacional sem atribuição obrigatória), buscadas
   via WebSearch/WebFetch.
+- `lampada_sinalizacao.jpg` — foto de produto do vendor MakerHero
+  ("Sinaleiro LED Iluminado 22mm",
+  https://www.makerhero.com/produto/sinaleiro-led-iluminado-22mm/), foto
+  comercial de catálogo (não open-licensed, uso educacional/ilustrativo,
+  como outras fotos de vendor já usadas no deck) — mostra claramente a
+  lâmpada piloto/sinalizadora com lente translúcida colorida.
 - `led_tht.jpg`, `chave_boia.jpg`, `industrial_entrada_2.jpg`,
   `botoeira_start.jpg` — fotos do Wikimedia Commons. As três primeiras
   são CC BY / CC BY-SA (**exigem atribuição**, incluída no comentário do
